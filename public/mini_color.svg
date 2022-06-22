@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="100mm"
+   height="100mm"
+   viewBox="0 0 100 100"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="mini_color.svg"
+   inkscape:export-filename="D:\OneDrive\_WueSpace\BVSR logo\ideas\hemnisphere.png"
+   inkscape:export-xdpi="254"
+   inkscape:export-ydpi="254"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="false"
+     inkscape:document-units="mm"
+     showgrid="false"
+     width="100mm"
+     inkscape:zoom="1.2898918"
+     inkscape:cx="111.24964"
+     inkscape:cy="281.03132"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <linearGradient
+       id="linearGradient5846"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#127417;stop-opacity:1;"
+         offset="0"
+         id="stop5844" />
+    </linearGradient>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3779">
+      <path
+         id="path3781"
+         style="fill:none;stroke-width:0.647713"
+         d="M 5.0002117,5.0002117 V 50.000048 H 16.008325 C 16.46661,49.474252 16.925463,48.948425 17.388086,48.426502 25.44438,39.526025 34.576954,31.587911 44.556971,24.912691 55.935131,17.27813 68.616568,11.240128 82.181031,8.8366701 84.906051,8.3913115 87.65581,7.9513885 90.42187,7.9276816 91.657562,7.7333023 93.330612,8.4404248 93.005693,9.9451295 92.665079,11.111709 91.395891,11.605476 90.419804,12.130009 79.808877,17.062314 69.780388,23.282406 60.890856,30.935062 54.436296,36.581678 48.414802,42.79664 43.754434,50.000048 H 94.999887 V 5.0002117 Z" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath6752">
+      <path
+         style="fill:none;stroke:none;stroke-width:0.284723px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 45.837324,24.464026 c 0,0 16.414755,-6.253547 35.022266,-6.54055 13.630109,-0.210231 2.39304,7.949734 2.39304,7.949734 L 59.473105,56.334213 c 0,0 -15.581609,-3.087431 -42.421323,-3.769955 -20.2624658,-0.515266 18.16391,-28.472751 18.16391,-28.472751 z"
+         id="path6754"
+         sodipodi:nodetypes="csccscc" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath6912">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 22.992769,40.85704 c 0,0 21.710646,-9.145823 42.652018,-9.658672 20.941368,-0.51285 -18.889972,28.292218 -18.889972,28.292218 L 8.5474982,56.071587 Z"
+         id="path6914" />
+    </clipPath>
+  </defs>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="trajectory upper">
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.847;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 18.812475,65 C 18.812475,65 50.56192,27.638258 90,25.000001 54.555716,41.181976 41.239786,65 41.239786,65 Z"
+       id="path3498"
+       sodipodi:nodetypes="cccc" />
+    <path
+       style="fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.847;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 18.812475,50 C 18.812475,50 50.56192,12.638258 90,10.000001 54.555716,26.181976 41.239786,50 41.239786,50 Z"
+       id="path6497"
+       sodipodi:nodetypes="cccc"
+       clip-path="url(#clipPath6752)"
+       transform="translate(0,15)" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="trajectory middle" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer5"
+     inkscape:label="trajectory lower">
+    <path
+       style="fill:#ffcc00;fill-opacity:1;stroke:none;stroke-width:0.847;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 18.812475,50 C 18.812475,50 50.56192,12.638258 90,10.000001 54.555716,26.181976 41.239786,50 41.239786,50 Z"
+       id="path6758"
+       sodipodi:nodetypes="cccc"
+       clip-path="url(#clipPath6912)"
+       transform="translate(0,15)" />
+  </g>
+  <g
+     inkscape:label="main"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <circle
+       style="fill:#2142ab;fill-opacity:1;stroke-width:1.11174"
+       id="path846"
+       cx="50"
+       cy="50"
+       r="40"
+       clip-path="url(#clipPath3779)"
+       transform="translate(0,15)"
+       inkscape:export-filename="D:\OneDrive\_WueSpace\BVSR logo\final3\pngs\mini_color.png"
+       inkscape:export-xdpi="254"
+       inkscape:export-ydpi="254" />
+  </g>
+</svg>
