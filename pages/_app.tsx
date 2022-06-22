@@ -9,6 +9,7 @@ function MyApp({Component, pageProps}: AppProps) {
         <Head>
             <title>Bundesverband studentischer Raumfahrt</title>
             <meta name="robots" content="index,archive,follow"/>
+            <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width"/>
 
             <meta property='og:title' content={"Bundesverband studentischer Raumfahrt"}/>
             <meta name='twitter:title' content={"Bundesverband studentischer Raumfahrt"}/>

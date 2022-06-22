@@ -1,5 +1,6 @@
 import React from 'react';
-import {createStyles, Overlay, Container, Title, Button, Text, Image, Group, Center} from '@mantine/core';
+import {createStyles, Overlay, Title, Text, Center} from '@mantine/core';
+import Image from 'next/image'
 
 const useStyles = createStyles((theme) => ({
     hero: {
@@ -81,7 +82,7 @@ export function HeroContentLeft() {
                     opacity={1}
                     zIndex={0}
                 />
-                <Image height={132} width={240} fit="cover" src={"/mini_color.svg"} alt={"BVSR logo"}/>
+                <Image height={132} width={240} src={"/mini_color.svg"} alt={"BVSR logo"}/>
             </Center>
             <Title className={classes.title} style={{textAlign: "center"}}>
                 Bundesverband<br/>studentischer Raumfahrt

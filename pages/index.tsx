@@ -3,8 +3,15 @@ import {HeroContentLeft} from "../components/HeroContentLeft";
 import MemberCard from "../components/MemberCard";
 import {Card, Container, Footer, Grid, Text, Timeline, Title} from "@mantine/core";
 import React from "react";
-import Head from "next/head";
 import Link from "next/link";
+import farLogo from "../public/logos/FAR.jpg"
+import wueSpaceLogo from "../public/logos/wue_space.png"
+import seeSatLogo from "../public/logos/SeeSat.png"
+import starLogo from "../public/logos/STAR.png"
+import hyendLogo from "../public/logos/HyEnd.png"
+import tudsatLogo from "../public/logos/TUDSaT.svg"
+import ksatLogo from "../public/logos/KSat.png"
+import warrLogo from "../public/logos/WARR.svg"
 
 const Home: NextPage = () => {
     return (
@@ -75,58 +82,58 @@ const Home: NextPage = () => {
                     </Title>
 
                     <Grid gutter={"sm"}>
-                        <Grid.Col lg={4} md={6}>
+                        <Grid.Col lg={4} sm={6}>
                             <MemberCard
-                                img={"/logos/LOGO_WARR_blue.svg"}
+                                img={warrLogo}
                                 name={"WARR"}
                                 description={"WARR e.V. was founded during the space race in the 1960s and is Germany's largest student space group. It is located in Munich."}
                                 link={"https://warr.de"}/>
                         </Grid.Col>
-                        <Grid.Col lg={4} md={6}>
+                        <Grid.Col lg={4} sm={6}>
                             <MemberCard
-                                img={"/logos/KSat.png"}
+                                img={ksatLogo}
                                 name={"KSat"}
                                 description={"KSat e.V. is a student space group at the University of Stuttgart, focusing on small Satellites and Experiments in Microgravity."}
                                 link={"https://www.ksat-stuttgart.de"}/>
                         </Grid.Col>
-                        <Grid.Col lg={4} md={6}>
+                        <Grid.Col lg={4} sm={6}>
                             <MemberCard
-                                img={"/logos/TUDSaT.svg"}
+                                img={tudsatLogo}
                                 name={"TUDSaT"}
                                 description={"TUDSaT e.V. is located at the University of Darmstadt and focus on satellites and rocketry."}
                                 link={"https://tudsat.space"}/>
                         </Grid.Col>
-                        <Grid.Col lg={4} md={6}>
+                        <Grid.Col lg={4} sm={6}>
                             <MemberCard
-                                img={"/logos/HyEnd_dark.png"}
+                                img={hyendLogo}
                                 name={"HyEnD"}
                                 description={"HyEnD e.V. stands for Hybrid Engine Development. Like KSat it is located at the University of Stuttgart. Rocketry is the main focus of HyEnD."}
                                 link={"https://hyend.de"}/>
                         </Grid.Col>
-                        <Grid.Col lg={4} md={6}>
+                        <Grid.Col lg={4} sm={6}>
                             <MemberCard
-                                img={"/logos/STAR.png"}
+                                img={starLogo}
                                 name={"STAR Dresden"}
                                 description={"STAR Dresden e.V. is the student space group at TU Dresden and is working on all kinds of space related topics, including rocketry, rovers and space elevators!"}
                                 link={"https://star-dresden.de"}/>
                         </Grid.Col>
-                        <Grid.Col lg={4} md={6}>
+                        <Grid.Col lg={4} sm={6}>
                             <MemberCard
-                                img={"/logos/SeeSat_Logo_freigestellt.png"}
+                                img={seeSatLogo}
                                 name={"SeeSat"}
                                 description={"SeeSat e.V. is located at the DHBW in Friedrichshafen. They develop a satellite for wildfire detection."}
                                 link={"https://seesat.eu"}/>
                         </Grid.Col>
-                        <Grid.Col lg={4} md={6}>
+                        <Grid.Col lg={4} sm={6}>
                             <MemberCard
-                                img={"/logos/wue_space.png"}
+                                img={wueSpaceLogo}
                                 name={"WüSpace"}
                                 description={"WüSpace e.V. is developing various Soft- and Hardware for space projects. It is located in Würzburg."}
                                 link={"https://www.wuespace.de"}/>
                         </Grid.Col>
-                        <Grid.Col lg={4} md={6}>
+                        <Grid.Col lg={4} sm={6}>
                             <MemberCard
-                                img={"/logos/FAR.jpg"}
+                                img={farLogo}
                                 name={"FAR"}
                                 description={"FAR e.V. is a nationwide association, that focuses mainly on rocketry. Unlike the other associations, they are not linked to a University."}
                                 link={"https://alternative-raumfahrt.de"}/>
