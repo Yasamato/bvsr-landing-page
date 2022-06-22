@@ -2,7 +2,7 @@
 FROM node:17.4.0-alpine AS deps
 WORKDIR /app
 
-COPY package.json yarn.lock ./
+COPY package.json package-lock.json ./
 RUN yarn install --frozen-lockfile
 
 # Rebuild the source code only when needed
@@ -11,7 +11,7 @@ WORKDIR /app
 
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
-RUN yarn build
+RUN npm ci
 
 # Production image, copy all the files and run next
 FROM node:17.4.0-alpine AS runner
