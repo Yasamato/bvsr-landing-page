@@ -11,7 +11,7 @@ WORKDIR /app
 
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
-RUN npm ci
+RUN npm ci && npm run build
 
 # Production image, copy all the files and run next
 FROM node:17.4.0-alpine AS runner

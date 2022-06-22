@@ -84,7 +84,7 @@ export function HeroContentLeft() {
                 <Image height={132} width={240} fit="cover" src={"/mini_color.svg"} alt={"BVSR logo"}/>
             </Center>
             <Title className={classes.title} style={{textAlign: "center"}}>
-                Bundesverband<br/>studentischer Raumfahrt e.V.
+                Bundesverband<br/>studentischer Raumfahrt
             </Title>
             <Center>
                 <Text className={classes.description} size="xl" mt="xl" style={{textAlign: "center"}}>

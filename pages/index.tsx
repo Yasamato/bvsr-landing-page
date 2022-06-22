@@ -1,20 +1,21 @@
 import type {NextPage} from 'next'
 import {HeroContentLeft} from "../components/HeroContentLeft";
 import MemberCard from "../components/MemberCard";
-import {Card, Container, Grid, Text, Timeline, Title} from "@mantine/core";
+import {Card, Container, Footer, Grid, Text, Timeline, Title} from "@mantine/core";
 import React from "react";
 import Head from "next/head";
+import Link from "next/link";
 
 const Home: NextPage = () => {
     return (
         <>
             <Head>
                 <meta charSet="utf-8"/>
-                <title>Bundesverband studentischer Raumfahrt e.V.</title>
+                <title>Bundesverband studentischer Raumfahrt</title>
                 <meta name="robots" content="index,archive,follow"/>
 
-                <meta property='og:title' content={"Bundesverband studentischer Raumfahrt e.V."}/>
-                <meta name='twitter:title' content={"Bundesverband studentischer Raumfahrt e.V."}/>
+                <meta property='og:title' content={"Bundesverband studentischer Raumfahrt"}/>
+                <meta name='twitter:title' content={"Bundesverband studentischer Raumfahrt"}/>
 
                 <meta name='description'
                       content={"The Bundesverband studentischer Raumfahrt (BVSR) is an association of german student groups representing them on a national level."}/>
@@ -28,7 +29,7 @@ const Home: NextPage = () => {
                 <link href={"https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap"} rel={"stylesheet"}/>
             </Head>
 
-            <main style={{backgroundColor: "#eee"}}>
+            <main style={{backgroundColor: "#eee", paddingBottom: "2rem"}}>
 
                 <HeroContentLeft/>
 
@@ -153,6 +154,14 @@ const Home: NextPage = () => {
                     </Grid>
                 </Container>
             </main>
+
+            <Footer height={40} p={"xs"}>
+                <Container>
+                    <Link href={"https://tudsat.space/impressum/"}>
+                        Legal notice / Impressum
+                    </Link>
+                </Container>
+            </Footer>
         </>
     )
 }
