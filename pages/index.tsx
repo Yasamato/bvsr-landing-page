@@ -9,38 +9,6 @@ import Link from "next/link";
 const Home: NextPage = () => {
     return (
         <>
-            <Head>
-                <meta charSet="utf-8"/>
-                <title>Bundesverband studentischer Raumfahrt</title>
-                <meta name="robots" content="index,archive,follow"/>
-
-                <meta property='og:title' content={"Bundesverband studentischer Raumfahrt"}/>
-                <meta name='twitter:title' content={"Bundesverband studentischer Raumfahrt"}/>
-
-                <meta name='description'
-                      content={"The Bundesverband studentischer Raumfahrt (BVSR) is an association of german student groups representing them on a national level."}/>
-                <meta property='og:description'
-                      content={"The Bundesverband studentischer Raumfahrt (BVSR) is an association of german student groups representing them on a national level."}/>
-                <meta name='twitter:description'
-                      content={"The Bundesverband studentischer Raumfahrt (BVSR) is an association of german student groups representing them on a national level."}/>
-
-                <meta name='twitter:image' content={"/square_color_white.png"}/>
-                <meta property='og:image' content={"/square_color_white.png"}/>
-
-
-                <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
-                <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
-                <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
-                <link rel="manifest" href="/site.webmanifest"/>
-                <meta name="apple-mobile-web-app-title" content="BVSR"/>
-                <meta name="application-name" content="BVSR"/>
-                <meta name="msapplication-TileColor" content="#da532c"/>
-                <meta name="theme-color" content="#ffffff"/>
-
-
-                <link href={"https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap"} rel={"stylesheet"}/>
-            </Head>
-
             <main style={{backgroundColor: "#eee", paddingBottom: "2rem"}}>
 
                 <HeroContentLeft/>
