@@ -1,2 +1,2 @@
-# bvsr-landing-page
+# BVSR landing page
 temporary landing page for the BVSR
