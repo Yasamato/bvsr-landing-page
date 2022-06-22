@@ -1,4 +1,4 @@
-import "../styles/global.css"
+import "../public/global.css"
 import type {AppProps} from 'next/app'
 import {MantineProvider} from "@mantine/core";
 
