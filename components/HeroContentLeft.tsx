@@ -1,14 +1,11 @@
 import React from 'react';
 import {createStyles, Overlay, Title, Text, Center} from '@mantine/core';
 import Image from 'next/image'
+import backgroundImage from "../public/background.jpg"
 
 const useStyles = createStyles((theme) => ({
     hero: {
         position: 'relative',
-        backgroundImage:
-            'url(/background.jpg)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
         height: 700,
         padding: theme.spacing.xl * 2,
         paddingBottom: theme.spacing.xl * 6,
@@ -76,19 +73,22 @@ export function HeroContentLeft() {
 
     return (
         <div className={classes.hero}>
+            <Image src={backgroundImage} layout={"fill"} objectFit={"cover"} alt={"Background image with stars"}/>
+            <Overlay
+                gradient="linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 40%)"
+                opacity={1}
+                zIndex={1}
+            />
+
             <Center>
-                <Overlay
-                    gradient="linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 40%)"
-                    opacity={1}
-                    zIndex={0}
-                />
                 <Image height={132} width={240} src={"/mini_color.svg"} alt={"BVSR logo"}/>
             </Center>
-            <Title className={classes.title} style={{textAlign: "center"}}>
+            <Title className={classes.title} style={{textAlign: "center", position: "relative", zIndex: 1}}>
                 Bundesverband<br/>studentischer Raumfahrt
             </Title>
+
             <Center>
-                <Text className={classes.description} size="xl" mt="xl" style={{textAlign: "center"}}>
+                <Text className={classes.description} size="xl" mt="xl" style={{textAlign: "center", zIndex: 1}}>
                     The Bundesverband studentischer Raumfahrt (BVSR) is an association of german student
                     groups representing them on a national level.
                 </Text>

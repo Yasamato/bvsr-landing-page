@@ -1,8 +1,9 @@
 import "../public/global.css"
 import type {AppProps} from 'next/app'
-import {MantineProvider} from "@mantine/core";
+import {Container, Footer, MantineProvider} from "@mantine/core";
 import Head from "next/head";
 import React from "react";
+import Link from "next/link";
 
 function MyApp({Component, pageProps}: AppProps) {
     return <>
@@ -36,7 +37,17 @@ function MyApp({Component, pageProps}: AppProps) {
             }}
             withGlobalStyles
             withNormalizeCSS>
-            <Component {...pageProps} />
+            <main style={{backgroundColor: "#eee", paddingBottom: "2rem", minHeight: "calc(100vh - 40px)"}}>
+                <Component {...pageProps} />
+            </main>
+
+            <Footer height={40} p={"xs"}>
+                <Container>
+                    <Link href={"https://tudsat.space/impressum/"}>
+                        Legal notice / Impressum
+                    </Link>
+                </Container>
+            </Footer>
         </MantineProvider>
     </>
 }
