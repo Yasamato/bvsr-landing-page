@@ -32,7 +32,7 @@ const Home: NextPage = () => {
 
                         <Timeline.Item title="Gaining members">
                             <Text color="dimmed" size="sm">
-                                Second meeting in Stuttgart
+                                Second meeting in Dresden
                             </Text>
                             <Text size="xs" mt={4}>2020</Text>
                         </Timeline.Item>
@@ -48,7 +48,7 @@ const Home: NextPage = () => {
                             <Text color="dimmed" size="sm">
                                 BVSR has been founded in Darmstadt
                             </Text>
-                            <Text size="xs" mt={4}>19. Dez. 2021</Text>
+                            <Text size="xs" mt={4}>19. Dec. 2021</Text>
                         </Timeline.Item>
 
                         <Timeline.Item title="1st BVSR Conference">

@@ -89,8 +89,8 @@ export function HeroContentLeft() {
 
             <Center>
                 <Text className={classes.description} size="xl" mt="xl" style={{textAlign: "center", zIndex: 1}}>
-                    The Bundesverband studentischer Raumfahrt (BVSR) is an association of german student
-                    groups representing them on a national level.
+                    The Bundesverband studentischer Raumfahrt (BVSR) represents German student groups involved in space
+                    projects on a national level
                 </Text>
             </Center>
         </div>

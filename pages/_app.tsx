@@ -16,11 +16,11 @@ function MyApp({Component, pageProps}: AppProps) {
             <meta name='twitter:title' content={"Bundesverband studentischer Raumfahrt"}/>
 
             <meta name='description'
-                  content={"The Bundesverband studentischer Raumfahrt (BVSR) is an association of german student groups representing them on a national level."}/>
+                  content={"The Bundesverband studentischer Raumfahrt (BVSR) represents German student groups involved in space projects on a national level."}/>
             <meta property='og:description'
-                  content={"The Bundesverband studentischer Raumfahrt (BVSR) is an association of german student groups representing them on a national level."}/>
+                  content={"The Bundesverband studentischer Raumfahrt (BVSR) represents German student groups involved in space projects on a national level."}/>
             <meta name='twitter:description'
-                  content={"The Bundesverband studentischer Raumfahrt (BVSR) is an association of german student groups representing them on a national level."}/>
+                  content={"The Bundesverband studentischer Raumfahrt (BVSR) represents German student groups involved in space projects on a national level."}/>
 
             <meta name='twitter:image' content={"/square_color_white.png"}/>
             <meta property='og:image' content={"/square_color_white.png"}/>
