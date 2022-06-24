@@ -73,7 +73,7 @@ export function HeroContentLeft() {
 
     return (
         <div className={classes.hero}>
-            <Image src={backgroundImage} layout={"fill"} objectFit={"cover"} alt={"Background image with stars"}/>
+            <Image src={backgroundImage} layout={"fill"} objectFit={"cover"} alt={"Background image with stars"} priority={true}/>
             <Overlay
                 gradient="linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 40%)"
                 opacity={1}
@@ -81,7 +81,7 @@ export function HeroContentLeft() {
             />
 
             <Center>
-                <Image height={132} width={240} src={"/mini_color.svg"} alt={"BVSR logo"}/>
+                <Image height={132} width={240} src={"/mini_color.svg"} alt={"BVSR logo"} priority={true}/>
             </Center>
             <Title className={classes.title} style={{textAlign: "center", position: "relative", zIndex: 1}}>
                 Bundesverband<br/>studentischer Raumfahrt
