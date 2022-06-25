@@ -23,7 +23,7 @@ const Home: NextPage = () => {
                         History of the BVSR
                     </Title>
                     <Timeline active={4} bulletSize={24} lineWidth={2} color={"blue"} m={"xl"}>
-                        <Timeline.Item title="Inital Talks">
+                        <Timeline.Item title="Initial Talks">
                             <Text color="dimmed" size="sm">
                                 First talks between founding members in Darmstadt
                             </Text>

@@ -1,6 +1,6 @@
 import "../public/global.css"
 import type {AppProps} from 'next/app'
-import {Container, Footer, MantineProvider} from "@mantine/core";
+import {Container, Footer, MantineProvider, Text} from "@mantine/core";
 import Head from "next/head";
 import React from "react";
 import Link from "next/link";
@@ -42,7 +42,14 @@ function MyApp({Component, pageProps}: AppProps) {
             </main>
 
             <Footer height={40} p={"xs"}>
-                <Container>
+                <Container style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    justifyContent: "space-between"
+                }}>
+                    <Text>
+                        Contact us per <a href={"mailto:bvsr@lucas-krempel.de"}>mail</a>
+                    </Text>
                     <Link href={"https://tudsat.space/impressum/"}>
                         Legal notice / Impressum
                     </Link>
