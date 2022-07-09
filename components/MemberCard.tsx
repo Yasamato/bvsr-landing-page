@@ -1,5 +1,6 @@
 import {Card, Text, Button, Group, useMantineTheme} from '@mantine/core';
 import Image, {StaticImageData} from 'next/image'
+import Link from "next/link";
 
 interface MemberCardProps {
     img: StaticImageData,
@@ -19,10 +20,12 @@ export default function MemberCard({img, name, description, link}: MemberCardPro
         <div style={{margin: 'auto'}}>
             <Card shadow="sm" p="lg" style={{height: 400}}>
                 <Card.Section p={"sm"}>
-                    <div style={{display: "block", position: "relative", height: 160}}>
-                        <Image src={img} layout={'fill'} alt={name}
-                               objectFit={'contain'}/>
-                    </div>
+                    <Link href={link} target={'_blank'}>
+                        <div style={{display: "block", position: "relative", height: 160, cursor: "pointer"}}>
+                            <Image src={img} layout={'fill'} alt={name}
+                                   objectFit={'contain'}/>
+                        </div>
+                    </Link>
                 </Card.Section>
 
                 <Group position="apart" style={{marginBottom: 5, marginTop: theme.spacing.sm}}>

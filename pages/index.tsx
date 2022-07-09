@@ -8,7 +8,7 @@ import wueSpaceLogo from "/public/logos/wue_space.png"
 import seeSatLogo from "/public/logos/SeeSat.png"
 import starLogo from "/public/logos/STAR.png"
 import hyendLogo from "/public/logos/HyEnd.png"
-import tudsatLogo from "/public/logos/TUDSaT.svg"
+import tudsatLogo from "/public/logos/TUDSaT.png"
 import ksatLogo from "/public/logos/KSat.png"
 import warrLogo from "/public/logos/WARR.svg"
 
@@ -22,17 +22,38 @@ const Home: NextPage = () => {
                     <Title order={2} m={"xl"}>
                         History of the BVSR
                     </Title>
-                    <Timeline active={4} bulletSize={24} lineWidth={2} color={"blue"} m={"xl"}>
-                        <Timeline.Item title="Initial Talks">
+                    <Timeline active={7} bulletSize={24} lineWidth={2} color={"blue"} m={"xl"}>
+                        <Timeline.Item title="First idea">
                             <Text color="dimmed" size="sm">
-                                First talks between founding members in Darmstadt
+                                First talks between groups at IAC Bremen
+                            </Text>
+                            <Text size="xs" mt={4}>2019</Text>
+                        </Timeline.Item>
+
+                        <Timeline.Item title="Initial talks">
+                            <Text color="dimmed" size="sm">
+                                 Meeting in Darmstadt between interested groups
+                            </Text>
+                            <Text size="xs" mt={4}>2019</Text>
+                        </Timeline.Item>
+
+                        <Timeline.Item title="Formulating goals">
+                            <Text color="dimmed" size="sm">
+                                Meeting in Stuttgart, defining core ideas and goals
+                            </Text>
+                            <Text size="xs" mt={4}>2019</Text>
+                        </Timeline.Item>
+
+                        <Timeline.Item title="Cooperation between groups">
+                            <Text color="dimmed" size="sm">
+                                Meeting in Darmstadt to deepen the cooperation between groups
                             </Text>
                             <Text size="xs" mt={4}>2019</Text>
                         </Timeline.Item>
 
                         <Timeline.Item title="Gaining members">
                             <Text color="dimmed" size="sm">
-                                Second meeting in Dresden
+                                Meeting in Dresden, starting work on the constitution
                             </Text>
                             <Text size="xs" mt={4}>2020</Text>
                         </Timeline.Item>

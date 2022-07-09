@@ -27,8 +27,8 @@ function MyApp({Component, pageProps}: AppProps) {
         </Head>
         <MantineProvider
             theme={{
-                fontFamily: 'Maven Pro',
-                headings: {fontFamily: 'Maven Pro'},
+                fontFamily: 'Maven Pro, sans-serif',
+                headings: {fontFamily: 'Maven Pro, sans-serif'},
                 colorScheme: 'light',
                 colors: {
                     'akzent': ['#2142ab'],
