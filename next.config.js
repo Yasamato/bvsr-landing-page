@@ -1,6 +1,23 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     async headers() {
+        let ContentSecurityPolicy = `
+            default-src 'self';
+            style-src 'self' 'unsafe-inline';
+            img-src 'self' data:;
+            connect-src 'self' ws:;
+        `
+        if (process.env.NODE_ENV !== 'production') {
+            console.log("This server is running in DEV MODE!!!")
+            ContentSecurityPolicy = `
+                default-src 'self';
+                script-src 'self' 'unsafe-inline' 'unsafe-eval';
+                style-src 'self' 'unsafe-inline';
+                img-src 'self' data:;
+                connect-src 'self' ws:;
+            `
+        }
+
         return [
             {
                 // Apply these headers to all routes in your application.
@@ -23,7 +40,7 @@ const nextConfig = {
                         value: ''
                     }, {
                         key: 'Content-Security-Policy',
-                        value: 'default-src \'self\'; style-src \'self\' \'unsafe-inline\'; img-src \'self\' data:;'
+                        value: ContentSecurityPolicy.replace(/\s{2,}/g, ' ').trim()
                     }
                 ]
             }
