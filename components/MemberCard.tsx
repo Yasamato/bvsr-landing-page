@@ -19,28 +19,37 @@ export default function MemberCard({img, name, description, link}: MemberCardPro
     return (
         <div style={{margin: 'auto'}}>
             <Card shadow="sm" p="lg" style={{height: 400}}>
-                <Card.Section p={"sm"}>
-                    <Link href={link} target={'_blank'}>
-                        <div style={{display: "block", position: "relative", height: 160, cursor: "pointer"}}>
-                            <Image src={img} layout={'fill'} alt={name}
-                                   objectFit={'contain'}/>
-                        </div>
-                    </Link>
-                </Card.Section>
-
-                <Group position="apart" style={{marginBottom: 5, marginTop: theme.spacing.sm}}>
-                    <Text weight={500}>{name}</Text>
-                </Group>
-
-                <Text size="sm" style={{color: secondaryColor, lineHeight: 1.5, flexGrow: 1}}>
-                    {description}
-                </Text>
-
-                <Button component={"a"} href={link} target="_blank" variant="light" color="blue" fullWidth style={{
-                    marginTop: 14
+                <div style={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    flexDirection: "column",
+                    height: "100%"
                 }}>
-                    Visit {name}
-                </Button>
+                    <div>
+                        <Card.Section p={"sm"}>
+                            <Link href={link} target={'_blank'}>
+                                <div style={{display: "block", position: "relative", height: 160, cursor: "pointer"}}>
+                                    <Image src={img} layout={'fill'} alt={name}
+                                           objectFit={'contain'}/>
+                                </div>
+                            </Link>
+                        </Card.Section>
+                        <Group position="apart" style={{marginBottom: 5, marginTop: theme.spacing.sm}}>
+                            <Text weight={500}>{name}</Text>
+                        </Group>
+
+                        <Text size="sm" style={{color: secondaryColor, lineHeight: 1.5, flexGrow: 1}}>
+                            {description}
+                        </Text>
+                    </div>
+
+                    <Button component={"a"} href={link} target="_blank" variant="light" color="blue" fullWidth
+                            style={{
+                                marginTop: 14
+                            }}>
+                        Visit {name}
+                    </Button>
+                </div>
             </Card>
         </div>
     );
