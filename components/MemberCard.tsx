@@ -29,8 +29,7 @@ export default function MemberCard({img, name, description, link}: MemberCardPro
                         <Card.Section p={"sm"}>
                             <Link href={link} target={'_blank'}>
                                 <div style={{display: "block", position: "relative", height: 160, cursor: "pointer"}}>
-                                    <Image src={img} layout={'fill'} alt={name}
-                                           objectFit={'contain'}/>
+                                    <Image src={img} fill={true} alt={name} style={{objectFit: "contain"}}/>
                                 </div>
                             </Link>
                         </Card.Section>

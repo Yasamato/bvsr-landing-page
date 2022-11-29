@@ -83,7 +83,7 @@ const Home: NextPage = () => {
                             <Text color="dimmed" size="sm">
                                 2nd BVSR Conference in Stuttgart
                             </Text>
-                            <Text size="xs" mt={4}>2023</Text>
+                            <Text size="xs" mt={4}>18.-21. May 2023</Text>
                         </Timeline.Item>
 
                         <Timeline.Item title="3rd BVSR Conference" lineVariant={"dashed"}>
