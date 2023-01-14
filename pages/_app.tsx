@@ -1,9 +1,11 @@
 import "../public/global.css"
 import type {AppProps} from 'next/app'
-import {Container, Footer, MantineProvider, Text} from "@mantine/core";
+import {MantineProvider} from "@mantine/core"
 import Head from "next/head";
 import React from "react";
-import Link from "next/link";
+import {appWithTranslation} from 'next-i18next'
+import Footer from "../components/Footer"
+import nextI18NextConfig from '../next-i18next.config.js'
 
 function MyApp({Component, pageProps}: AppProps) {
     return <>
@@ -41,22 +43,9 @@ function MyApp({Component, pageProps}: AppProps) {
                 <Component {...pageProps} />
             </main>
 
-            <Footer height={40} p={"xs"}>
-                <Container style={{
-                    display: "flex",
-                    flexDirection: "row",
-                    justifyContent: "space-between"
-                }}>
-                    <Text>
-                        Contact us per <a href={"mailto:bvsr@lucas-krempel.de"}>mail</a>
-                    </Text>
-                    <Link href={"https://tudsat.space/impressum/"}>
-                        Legal notice / Impressum
-                    </Link>
-                </Container>
-            </Footer>
+            <Footer/>
         </MantineProvider>
     </>
 }
 
-export default MyApp
+export default appWithTranslation(MyApp, nextI18NextConfig)

@@ -1,15 +1,16 @@
-import {Card, Text, Button, Group, useMantineTheme} from '@mantine/core';
+import {Card, Text, Button, Group, useMantineTheme} from '@mantine/core'
 import Image, {StaticImageData} from 'next/image'
 import Link from "next/link";
+import {WithTranslation, withTranslation} from "next-i18next"
 
-interface MemberCardProps {
+interface MemberCardProps extends WithTranslation {
     img: StaticImageData,
     name: string,
     description: string,
     link: string
 }
 
-export default function MemberCard({img, name, description, link}: MemberCardProps) {
+function MemberCard({t, img, name, description, link}: MemberCardProps) {
     const theme = useMantineTheme();
 
     const secondaryColor = theme.colorScheme === 'dark'
@@ -46,10 +47,12 @@ export default function MemberCard({img, name, description, link}: MemberCardPro
                             style={{
                                 marginTop: 14
                             }}>
-                        Visit {name}
+                        {t('members:visit')} {name}
                     </Button>
                 </div>
             </Card>
         </div>
-    );
+    )
 }
+
+export default withTranslation('members')(MemberCard)

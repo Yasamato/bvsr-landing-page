@@ -1,7 +1,8 @@
-import React from 'react';
-import {createStyles, Overlay, Title, Text, Center} from '@mantine/core';
+import React from 'react'
+import {createStyles, Overlay, Title, Text, Center} from '@mantine/core'
 import Image from 'next/image'
 import backgroundImage from "../public/background.jpg"
+import {WithTranslation, withTranslation} from "next-i18next"
 
 const useStyles = createStyles((theme) => ({
     hero: {
@@ -66,10 +67,10 @@ const useStyles = createStyles((theme) => ({
             width: '100%',
         },
     },
-}));
+}))
 
-export function HeroContentLeft() {
-    const {classes} = useStyles();
+function HeroContentLeft({t}: WithTranslation) {
+    const {classes} = useStyles()
 
     return (
         <div className={classes.hero}>
@@ -107,10 +108,11 @@ export function HeroContentLeft() {
 
             <Center>
                 <Text className={classes.description} size="xl" mt="xl" style={{textAlign: "center", zIndex: 1}}>
-                    The Bundesverband studentischer Raumfahrt (BVSR) represents German student groups involved in space
-                    projects on a national level
+                    {t('hero_label')}
                 </Text>
             </Center>
         </div>
-    );
+    )
 }
+
+export default withTranslation('common')(HeroContentLeft)

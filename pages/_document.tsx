@@ -9,7 +9,7 @@ export default class _Document extends Document {
 
     render() {
         return (
-            <Html lang={"en"}>
+            <Html>
                 <Head>
                     <meta charSet="utf-8"/>
 
