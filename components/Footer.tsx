@@ -1,7 +1,7 @@
 import {Container, Text, Footer as MantineFooter} from "@mantine/core"
 import Link from "next/link"
 import React from "react"
-import {Trans, useTranslation, withTranslation, WithTranslation} from "next-i18next"
+import {Trans, useTranslation} from "next-i18next"
 
 export default function Footer() {
     const {t} = useTranslation('footer')
@@ -14,7 +14,7 @@ export default function Footer() {
                 justifyContent: "space-between"
             }}>
                 <Text>
-                    <Trans i18nKey="footer:contact_us">
+                    <Trans t={t} i18nKey="contact_us">
                         Contact us per <a href={"mailto:bvsr@lucas-krempel.de"}>mail</a>
                     </Trans>
                 </Text>
