@@ -10,20 +10,38 @@ import hyendLogo from "/public/logos/HyEnd.png"
 import tudsatLogo from "/public/logos/TUDSaT.png"
 import ksatLogo from "/public/logos/KSat.png"
 import warrLogo from "/public/logos/WARR.svg"
-import {useTranslation} from 'react-i18next'
-import {GetStaticProps, InferGetStaticPropsType} from "next"
+import {useTranslation} from 'next-i18next'
+import {InferGetStaticPropsType} from "next"
 import {serverSideTranslations} from "next-i18next/serverSideTranslations"
+import Link from "next/link"
+import Meta from "../components/Meta"
 
-interface Props {
-
-}
 
 function Home(_props: InferGetStaticPropsType<typeof getStaticProps>) {
     const {t} = useTranslation(['common', 'members'])
 
     return (
         <>
+            <Meta description={t("common:hero_label")} title={"Bundesverband studentischer Raumfahrt"}/>
             <HeroContentLeft/>
+            <div style={{
+                position: "absolute",
+                right: "1em",
+                top: "1em",
+                color: "#fff",
+                zIndex: 1000
+            }}>
+                {_props.locale !== "en" ? (
+                    <Link href={"/"} locale={"en"}>
+                        EN
+                    </Link>
+                ) : "EN"}{" | "}
+                {_props.locale !== "de" ? (
+                    <Link href={"/"} locale={"de"}>
+                        DE
+                    </Link>
+                ) : "DE"}
+            </div>
 
             <Container pt={"xl"}>
                 <Card my={"xl"}>
@@ -104,7 +122,7 @@ function Home(_props: InferGetStaticPropsType<typeof getStaticProps>) {
                 </Card>
 
                 <Title order={2}>
-                    {t('members:Members are')}
+                    {t('members:members')}
                 </Title>
 
                 <Grid gutter={"sm"}>
@@ -170,16 +188,26 @@ function Home(_props: InferGetStaticPropsType<typeof getStaticProps>) {
     )
 }
 
-export const getStaticProps: GetStaticProps<Props> = async (
+export const getStaticProps = async (
     {
         locale,
+    }: {
+        locale: string
     }) => ({
     props: {
-        ...(await serverSideTranslations(locale ?? 'de', [
-            'common',
-            'footer',
-            'members'
-        ])),
+        locale,
+        ...(
+            await serverSideTranslations(
+                locale,
+                [
+                    'common',
+                    'footer',
+                    'members'
+                ],
+                null,
+                ['en', 'de']
+            )
+        ),
     },
 })
 export default Home

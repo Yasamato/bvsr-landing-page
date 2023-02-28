@@ -10,19 +10,8 @@ import nextI18NextConfig from '../next-i18next.config.js'
 function MyApp({Component, pageProps}: AppProps) {
     return <>
         <Head>
-            <title>Bundesverband studentischer Raumfahrt</title>
             <meta name="robots" content="index,archive,follow"/>
             <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width"/>
-
-            <meta property='og:title' content={"Bundesverband studentischer Raumfahrt"}/>
-            <meta name='twitter:title' content={"Bundesverband studentischer Raumfahrt"}/>
-
-            <meta name='description'
-                  content={"The Bundesverband studentischer Raumfahrt (BVSR) represents German student groups involved in space projects on a national level."}/>
-            <meta property='og:description'
-                  content={"The Bundesverband studentischer Raumfahrt (BVSR) represents German student groups involved in space projects on a national level."}/>
-            <meta name='twitter:description'
-                  content={"The Bundesverband studentischer Raumfahrt (BVSR) represents German student groups involved in space projects on a national level."}/>
 
             <meta name='twitter:image' content={"/square_color_white.png"}/>
             <meta property='og:image' content={"/square_color_white.png"}/>
