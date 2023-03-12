@@ -1,6 +1,6 @@
 import HeroContentLeft from "../components/HeroContentLeft"
 import MemberCard from "../components/MemberCard"
-import {Card, Container, Grid, Text, Timeline, Title} from "@mantine/core"
+import {Alert, Card, Container, Grid, SegmentedControl, Text, Timeline, Title} from "@mantine/core"
 import React from "react"
 import farLogo from "/public/logos/FAR.jpg"
 import wueSpaceLogo from "/public/logos/wue_space.png"
@@ -13,12 +13,13 @@ import warrLogo from "/public/logos/WARR.svg"
 import {useTranslation} from 'next-i18next'
 import {InferGetStaticPropsType} from "next"
 import {serverSideTranslations} from "next-i18next/serverSideTranslations"
-import Link from "next/link"
 import Meta from "../components/Meta"
+import {useRouter} from "next/router"
 
 
 function Home(_props: InferGetStaticPropsType<typeof getStaticProps>) {
     const {t} = useTranslation(['common', 'members'])
+    const router = useRouter()
 
     return (
         <>
@@ -31,19 +32,34 @@ function Home(_props: InferGetStaticPropsType<typeof getStaticProps>) {
                 color: "#fff",
                 zIndex: 1000
             }}>
-                {_props.locale !== "en" ? (
-                    <Link href={"/"} locale={"en"}>
-                        EN
-                    </Link>
-                ) : "EN"}{" | "}
-                {_props.locale !== "de" ? (
-                    <Link href={"/"} locale={"de"}>
-                        DE
-                    </Link>
-                ) : "DE"}
+                <SegmentedControl
+                    color={"blue"}
+                    value={_props.locale === "de" ? "de" : "en"}
+                    onChange={(newValue) => {
+                        console.log("Switching language to:", newValue)
+                        router.push("/", "/", {
+                            locale: newValue
+                        }).then((result) => {
+                            console.log("Successfully switched to", newValue, result)
+                        })
+                    }}
+                    data={[
+                        {
+                            value: "en",
+                            label: "EN"
+                        },
+                        {
+                            value: "de",
+                            label: "DE"
+                        }
+                    ]}/>
             </div>
 
             <Container pt={"xl"}>
+                <Alert title={"Save the date!"} color={"orange"}>
+                    {t('common:save_the_date')}
+                </Alert>
+
                 <Card my={"xl"}>
                     <Title order={2} m={"xl"}>
                         {t('common:history')}
