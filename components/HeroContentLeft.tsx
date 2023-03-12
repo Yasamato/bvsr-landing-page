@@ -8,28 +8,12 @@ const useStyles = createStyles((theme) => ({
     hero: {
         position: 'relative',
         height: 700,
-        padding: theme.spacing.xl * 2,
-        paddingBottom: theme.spacing.xl * 6,
+        padding: `calc(${theme.spacing.xl} * 2)`,
+        paddingBottom: `calc(${theme.spacing.xl} * 6)`,
 
         [theme.fn.smallerThan('sm')]: {
             height: 500,
-            paddingBottom: theme.spacing.xl * 3,
-        },
-    },
-
-    container: {
-        height: 700,
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'flex-end',
-        alignItems: 'flex-start',
-        paddingBottom: theme.spacing.xl * 6,
-        zIndex: 1,
-        position: 'relative',
-
-        [theme.fn.smallerThan('sm')]: {
-            height: 500,
-            paddingBottom: theme.spacing.xl * 3,
+            paddingBottom: `calc(${theme.spacing.xl} * 3)`,
         },
     },
 
@@ -58,15 +42,7 @@ const useStyles = createStyles((theme) => ({
             maxWidth: '100%',
             fontSize: theme.fontSizes.sm,
         },
-    },
-
-    control: {
-        marginTop: theme.spacing.xl * 1.5,
-
-        [theme.fn.smallerThan('sm')]: {
-            width: '100%',
-        },
-    },
+    }
 }))
 
 function HeroContentLeft({t}: WithTranslation) {
