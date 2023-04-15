@@ -1,8 +1,8 @@
 import "../public/global.css"
 import type {AppProps} from 'next/app'
 import {MantineProvider} from "@mantine/core"
-import Head from "next/head";
-import React from "react";
+import Head from "next/head"
+import React from "react"
 import {appWithTranslation} from 'next-i18next'
 import Footer from "../components/Footer"
 import nextI18NextConfig from '../next-i18next.config.js'

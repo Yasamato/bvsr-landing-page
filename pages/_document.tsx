@@ -18,6 +18,8 @@ export default function Document() {
                 <meta name="application-name" content="BVSR"/>
                 <meta name="msapplication-TileColor" content="#da532c"/>
                 <meta name="theme-color" content="#ffffff"/>
+
+                <link rel="preload" href="/MavenPro-VariableFont_wght.woff2" as="font" type="font/woff2"/>
             </Head>
 
             <body>
