@@ -1,12 +1,12 @@
 # Install dependencies only when needed
-FROM node:18.4.0-alpine AS deps
+FROM node:19.9.0-alpine AS deps
 WORKDIR /app
 
 COPY package.json package-lock.json ./
 RUN yarn install --frozen-lockfile
 
 # Rebuild the source code only when needed
-FROM node:18.4.0-alpine AS builder
+FROM node:19.9.0-alpine AS builder
 WORKDIR /app
 
 COPY --from=deps /app/node_modules ./node_modules
@@ -14,11 +14,11 @@ COPY . .
 RUN npm ci && npm run build
 
 # Production image, copy all the files and run next
-FROM node:18.4.0-alpine AS runner
+FROM node:19.9.0-alpine AS runner
 WORKDIR /app
 
 # You only need to copy next.config.js if you are NOT using the default configuration
-# COPY --from=builder /app/next.config.js ./
+COPY --from=builder /app/next.config.js ./
 COPY --from=builder /app/public ./public
 COPY --from=builder /app/package.json ./package.json
 
