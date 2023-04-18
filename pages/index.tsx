@@ -6,7 +6,7 @@ import nextI18NextConfig from '../next-i18next.config.js'
 
 
 function Home(_props: InferGetStaticPropsType<typeof getStaticProps>) {
-    return (<Homepage locale={_props.locale}/>)
+    return (<Homepage/>)
 }
 
 export const getStaticProps = async (
@@ -16,14 +16,14 @@ export const getStaticProps = async (
         locale: string
     }) => ({
     props: {
-        locale,
         ...(
             await serverSideTranslations(
                 locale,
                 [
                     'common',
                     'footer',
-                    'members'
+                    'members',
+                    'navbar'
                 ],
                 nextI18NextConfig,
                 ['en', 'de']

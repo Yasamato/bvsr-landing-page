@@ -45,7 +45,7 @@ const useStyles = createStyles((theme) => ({
     }
 }))
 
-function HeroContentLeft({t}: WithTranslation) {
+function HeroContent({t}: WithTranslation) {
     const {classes} = useStyles()
 
     return (
@@ -91,4 +91,4 @@ function HeroContentLeft({t}: WithTranslation) {
     )
 }
 
-export default withTranslation('common')(HeroContentLeft)
+export default withTranslation('common')(HeroContent)

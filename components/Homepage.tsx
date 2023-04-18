@@ -1,6 +1,6 @@
-import HeroContentLeft from "../components/HeroContentLeft"
+import HeroContentLeft from "./HeroContent"
 import MemberCard from "../components/MemberCard"
-import {Alert, Card, Container, Grid, SegmentedControl, Text, Timeline, Title} from "@mantine/core"
+import {Alert, Card, Container, Grid, Text, Timeline, Title} from "@mantine/core"
 import React from "react"
 import farLogo from "/public/logos/FAR.jpg"
 import wueSpaceLogo from "/public/logos/wue_space.png"
@@ -10,125 +10,96 @@ import hyendLogo from "/public/logos/HyEnd.png"
 import tudsatLogo from "/public/logos/TUDSaT.png"
 import ksatLogo from "/public/logos/KSat.png"
 import warrLogo from "/public/logos/WARR.svg"
-import {useTranslation} from 'next-i18next'
+import {Trans, withTranslation, WithTranslation} from 'next-i18next'
 import Meta from "../components/Meta"
-import {useRouter} from "next/router"
+import Link from "next/link"
 
 
-export default function Homepage({locale}: { locale: string }) {
-    const {t} = useTranslation(['common', 'members'])
-    const router = useRouter()
+const Homepage = ({t}: WithTranslation) => {
 
     return (
         <>
-            <Meta description={t("common:hero_label")} title={"Bundesverband studentischer Raumfahrt"}/>
+            <Meta description={t("hero_label")} title={"Bundesverband studentischer Raumfahrt"}/>
             <HeroContentLeft/>
-            <div style={{
-                position: "absolute",
-                right: "1em",
-                top: "1em",
-                color: "#fff",
-                zIndex: 1000
-            }}>
-                <SegmentedControl
-                    color={"blue"}
-                    value={locale === "de" ? "de" : "en"}
-                    onChange={(newValue) => {
-                        console.log("Switching language to:", newValue)
-                        router.push("/", "/", {
-                            locale: newValue
-                        }).then((result) => {
-                            console.log("Successfully switched to", newValue, result)
-                        })
-                    }}
-                    data={[
-                        {
-                            value: "en",
-                            label: "EN"
-                        },
-                        {
-                            value: "de",
-                            label: "DE"
-                        }
-                    ]}/>
-            </div>
 
             <Container pt={"xl"}>
                 <Alert title={"Save the date!"} color={"orange"}>
-                    {t('common:save_the_date')}
+                    <Trans t={t} i18nKey="save_the_date" ns={'common'}>
+                        The next <Link href={"/conference/2023"}>BVSR Conference</Link> is going to happen on 18.-21. May 2023 in Stuttgart.
+                    </Trans>
                 </Alert>
 
                 <Card my={"xl"}>
                     <Title order={2} m={"xl"}>
-                        {t('common:history')}
+                        {t('history')}
                     </Title>
                     <Timeline active={7} bulletSize={24} lineWidth={2} color={"blue"} m={"xl"}>
-                        <Timeline.Item title={t('common:timeline.first_talks.title')}>
+                        <Timeline.Item title={t('timeline.first_talks.title')}>
                             <Text color="dimmed" size="sm">
-                                {t('common:timeline.first_talks.text')}
+                                {t('timeline.first_talks.text')}
                             </Text>
                             <Text size="xs" mt={4}>2019</Text>
                         </Timeline.Item>
 
-                        <Timeline.Item title={t('common:timeline.interested_groups.title')}>
+                        <Timeline.Item title={t('timeline.interested_groups.title')}>
                             <Text color="dimmed" size="sm">
-                                {t('common:timeline.interested_groups.text')}
+                                {t('timeline.interested_groups.text')}
                             </Text>
                             <Text size="xs" mt={4}>2019</Text>
                         </Timeline.Item>
 
-                        <Timeline.Item title={t('common:timeline.core_ideas.title')}>
+                        <Timeline.Item title={t('timeline.core_ideas.title')}>
                             <Text color="dimmed" size="sm">
-                                {t('common:timeline.core_ideas.text')}
+                                {t('timeline.core_ideas.text')}
                             </Text>
                             <Text size="xs" mt={4}>2019</Text>
                         </Timeline.Item>
 
-                        <Timeline.Item title={t('common:timeline.deepen_cooperation.title')}>
+                        <Timeline.Item title={t('timeline.deepen_cooperation.title')}>
                             <Text color="dimmed" size="sm">
-                                {t('common:timeline.deepen_cooperation.text')}
+                                {t('timeline.deepen_cooperation.text')}
                             </Text>
                             <Text size="xs" mt={4}>2019</Text>
                         </Timeline.Item>
 
-                        <Timeline.Item title={t('common:timeline.start_constitution.title')}>
+                        <Timeline.Item title={t('timeline.start_constitution.title')}>
                             <Text color="dimmed" size="sm">
-                                {t('common:timeline.start_constitution.text')}
+                                {t('timeline.start_constitution.text')}
                             </Text>
                             <Text size="xs" mt={4}>2020</Text>
                         </Timeline.Item>
 
-                        <Timeline.Item title={t('common:timeline.decision_founding.title')}>
+                        <Timeline.Item title={t('timeline.decision_founding.title')}>
                             <Text color="dimmed" size="sm">
-                                {t('common:timeline.decision_founding.text')}
+                                {t('timeline.decision_founding.text')}
                             </Text>
                             <Text size="xs" mt={4}>2021</Text>
                         </Timeline.Item>
 
-                        <Timeline.Item title={t('common:timeline.founding.title')}>
+                        <Timeline.Item title={t('timeline.founding.title')}>
                             <Text color="dimmed" size="sm">
-                                {t('common:timeline.founding.text')}
+                                {t('timeline.founding.text')}
                             </Text>
                             <Text size="xs" mt={4}>19. Dec. 2021</Text>
                         </Timeline.Item>
 
-                        <Timeline.Item title={t('common:timeline.1st_conference.title')}>
+                        <Timeline.Item title={t('timeline.1st_conference.title')}>
                             <Text color="dimmed" size="sm">
-                                {t('common:timeline.1st_conference.text')}
+                                {t('timeline.1st_conference.text')}
                             </Text>
                             <Text size="xs" mt={4}>16.-19. Jun. 2022</Text>
                         </Timeline.Item>
 
-                        <Timeline.Item title={t('common:timeline.2nd_conference.title')} lineVariant={"dashed"}>
+                        <Timeline.Item title={t('timeline.2nd_conference.title')} lineVariant={"dashed"}>
                             <Text color="dimmed" size="sm">
-                                {t('common:timeline.2nd_conference.text')}
+                                {t('timeline.2nd_conference.text')}
                             </Text>
                             <Text size="xs" mt={4}>18.-21. May 2023</Text>
                         </Timeline.Item>
 
-                        <Timeline.Item title={t('common:timeline.3rd_conference.title')} lineVariant={"dashed"}>
+                        <Timeline.Item title={t('timeline.3rd_conference.title')} lineVariant={"dashed"}>
                             <Text color="dimmed" size="sm">
-                                {t('common:timeline.3rd_conference.text')}
+                                {t('timeline.3rd_conference.text')}
                             </Text>
                             <Text size="xs" mt={4}>2024</Text>
                         </Timeline.Item>
@@ -136,7 +107,7 @@ export default function Homepage({locale}: { locale: string }) {
                 </Card>
 
                 <Title order={2}>
-                    {t('members:members')}
+                    {t('members', {ns: 'members'})}
                 </Title>
 
                 <Grid gutter={"sm"}>
@@ -144,56 +115,56 @@ export default function Homepage({locale}: { locale: string }) {
                         <MemberCard
                             img={warrLogo}
                             name={"WARR"}
-                            description={t('members:warr_desc')}
+                            description={t('warr_desc', {ns: 'members'})}
                             link={"https://warr.de"}/>
                     </Grid.Col>
                     <Grid.Col lg={4} sm={6}>
                         <MemberCard
                             img={ksatLogo}
                             name={"KSat"}
-                            description={t('members:ksat_desc')}
+                            description={t('ksat_desc', {ns: 'members'})}
                             link={"https://www.ksat-stuttgart.de"}/>
                     </Grid.Col>
                     <Grid.Col lg={4} sm={6}>
                         <MemberCard
                             img={tudsatLogo}
                             name={"TUDSaT"}
-                            description={t('members:tudsat_desc')}
+                            description={t('tudsat_desc', {ns: 'members'})}
                             link={"https://tudsat.space"}/>
                     </Grid.Col>
                     <Grid.Col lg={4} sm={6}>
                         <MemberCard
                             img={hyendLogo}
                             name={"HyEnD"}
-                            description={t('members:hyend_desc')}
+                            description={t('hyend_desc', {ns: 'members'})}
                             link={"https://hyend.de"}/>
                     </Grid.Col>
                     <Grid.Col lg={4} sm={6}>
                         <MemberCard
                             img={starLogo}
                             name={"STAR Dresden"}
-                            description={t('members:star_desc')}
+                            description={t('star_desc', {ns: 'members'})}
                             link={"https://star-dresden.de"}/>
                     </Grid.Col>
                     <Grid.Col lg={4} sm={6}>
                         <MemberCard
                             img={seeSatLogo}
                             name={"SeeSat"}
-                            description={t('members:seesat_desc')}
+                            description={t('seesat_desc', {ns: 'members'})}
                             link={"https://seesat.eu"}/>
                     </Grid.Col>
                     <Grid.Col lg={4} sm={6}>
                         <MemberCard
                             img={wueSpaceLogo}
                             name={"WüSpace"}
-                            description={t('members:wuespace_desc')}
+                            description={t('wuespace_desc', {ns: 'members'})}
                             link={"https://www.wuespace.de"}/>
                     </Grid.Col>
                     <Grid.Col lg={4} sm={6}>
                         <MemberCard
                             img={farLogo}
                             name={"FAR"}
-                            description={t('members:far_desc')}
+                            description={t('far_desc', {ns: 'members'})}
                             link={"https://alternative-raumfahrt.de"}/>
                     </Grid.Col>
                 </Grid>
@@ -201,3 +172,5 @@ export default function Homepage({locale}: { locale: string }) {
         </>
     )
 }
+
+export default withTranslation(['common', 'members'])(Homepage)

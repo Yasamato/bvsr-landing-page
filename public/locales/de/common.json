@@ -1,7 +1,7 @@
 {
   "hero_label": "Der Bundesverband studentischer Raumfahrt (BVSR) repräsentiert deutsche Studentengruppen involviert in Weltraumprojekten auf einem nationalen Level",
   "history": "Geschichte des BVSR",
-  "save_the_date": "Die nächste BVSR Konferenz ist am 18.-21. Mai 2023 in Stuttgart.",
+  "save_the_date": "Die nächste <1>BVSR Konferenz</1> ist am 18.-21. Mai 2023 in Stuttgart.",
   "timeline": {
     "first_talks": {
       "title": "Erste Idee",
