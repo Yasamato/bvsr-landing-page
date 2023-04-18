@@ -256,6 +256,11 @@ export default function Conference2023(_props: InferGetStaticPropsType<typeof ge
                         </tr>
                         </tbody>
                     </Table>
+
+                    <p>
+                        Contact Partner - Conference: Justus Goll (<a
+                        href={"mailto:justus.goll@ksat-stuttgart.de"}>justus.goll@ksat-stuttgart.de</a>)
+                    </p>
                 </article>
             </Container>
         )
@@ -527,6 +532,11 @@ export default function Conference2023(_props: InferGetStaticPropsType<typeof ge
                     </tr>
                     </tbody>
                 </Table>
+
+                <p>
+                    Ansprechpartner Konferenz: Justus Goll (<a
+                    href={"mailto:justus.goll@ksat-stuttgart.de"}>justus.goll@ksat-stuttgart.de</a>)
+                </p>
             </article>
         </Container>
     )
