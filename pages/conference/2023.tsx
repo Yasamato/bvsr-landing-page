@@ -219,7 +219,7 @@ export default function Conference2023(_props: InferGetStaticPropsType<typeof ge
                                 12:30PM – 2:00PM
                             </td>
                             <td>
-                                "Space Up"
+                                &quot;Space Up&quot;
                             </td>
                         </tr>
                         <tr>
@@ -623,7 +623,7 @@ export default function Conference2023(_props: InferGetStaticPropsType<typeof ge
                             12:30 - 14:00 Uhr
                         </td>
                         <td>
-                            "Space Up"
+                            &ldquo;Space Up&rdquo;
                         </td>
                     </tr>
                     <tr>
