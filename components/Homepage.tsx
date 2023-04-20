@@ -38,7 +38,7 @@ const Homepage = ({t}: WithTranslation) => {
                             <Text color="dimmed" size="sm">
                                 {t('timeline.first_talks.text')}
                             </Text>
-                            <Text size="xs" mt={4}>2019</Text>
+                            <Text size="xs" mt={4}>2018</Text>
                         </Timeline.Item>
 
                         <Timeline.Item title={t('timeline.interested_groups.title')}>
