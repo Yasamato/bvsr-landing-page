@@ -2,7 +2,7 @@ import React from "react"
 import {InferGetStaticPropsType} from "next"
 import {serverSideTranslations} from "next-i18next/serverSideTranslations"
 import nextI18NextConfig from '../../next-i18next.config.js'
-import {Container, Table} from "@mantine/core";
+import {AspectRatio, Container, Table} from "@mantine/core";
 import Meta from "../../components/Meta";
 
 
@@ -81,6 +81,26 @@ export default function Conference2023(_props: InferGetStaticPropsType<typeof ge
                         supporting this, please get in touch with us.
                     </p>
 
+                    <AspectRatio ratio={30.3 / 21.6}>
+                        <iframe
+                            src={"/conference/BVSR_Timeline.pdf"}
+                            title={"Timeline for BVSR Conference"}
+                            width={"100%"}
+                            height={"100%"}
+                            style={{
+                                border: 0
+                            }}
+                        />
+                    </AspectRatio>
+
+                    <p>
+                        Contact Partner - Conference: Justus Goll (<a
+                        href={"mailto:justus.goll@ksat-stuttgart.de"}>justus.goll@ksat-stuttgart.de</a>)
+                    </p>
+                </article>
+            </Container>
+        )
+        /*
                     <h3>
                         Program
                     </h3>
@@ -88,7 +108,7 @@ export default function Conference2023(_props: InferGetStaticPropsType<typeof ge
                     <h5>
                         Thursday, 18th May 2023
                     </h5>
-                    <Table>
+                    <Table striped highlightOnHover>
                         <thead>
                         <tr>
                             <th>
@@ -131,7 +151,7 @@ export default function Conference2023(_props: InferGetStaticPropsType<typeof ge
                     <h5>
                         Friday, 19th May 2023
                     </h5>
-                    <Table>
+                    <Table striped highlightOnHover>
                         <thead>
                         <tr>
                             <th>
@@ -174,7 +194,7 @@ export default function Conference2023(_props: InferGetStaticPropsType<typeof ge
                     <h5>
                         Saturday, 20st May 2023
                     </h5>
-                    <Table>
+                    <Table striped highlightOnHover>
                         <thead>
                         <tr>
                             <th>
@@ -225,7 +245,7 @@ export default function Conference2023(_props: InferGetStaticPropsType<typeof ge
                     <h5>
                         Sunday, 21st May 2023
                     </h5>
-                    <Table>
+                    <Table striped highlightOnHover>
                         <thead>
                         <tr>
                             <th>
@@ -256,14 +276,7 @@ export default function Conference2023(_props: InferGetStaticPropsType<typeof ge
                         </tr>
                         </tbody>
                     </Table>
-
-                    <p>
-                        Contact Partner - Conference: Justus Goll (<a
-                        href={"mailto:justus.goll@ksat-stuttgart.de"}>justus.goll@ksat-stuttgart.de</a>)
-                    </p>
-                </article>
-            </Container>
-        )
+         */
     }
 
     return (
@@ -357,6 +370,26 @@ export default function Conference2023(_props: InferGetStaticPropsType<typeof ge
                     Unterstützung haben, kontaktieren Sie uns gerne.
                 </p>
 
+                <AspectRatio ratio={30.3 / 21.6}>
+                    <iframe
+                        src={"/conference/BVSR_Timeline.pdf"}
+                        title={"Timeline for BVSR Conference"}
+                        width={"100%"}
+                        height={"100%"}
+                        style={{
+                            border: 0
+                        }}
+                    />
+                </AspectRatio>
+
+                <p>
+                    Ansprechpartner Konferenz: Justus Goll (<a
+                    href={"mailto:justus.goll@ksat-stuttgart.de"}>justus.goll@ksat-stuttgart.de</a>)
+                </p>
+            </article>
+        </Container>
+    )
+    /*
                 <h3>
                     Program
                 </h3>
@@ -364,7 +397,7 @@ export default function Conference2023(_props: InferGetStaticPropsType<typeof ge
                 <h5>
                     Donnerstag, 18. Mai 2023
                 </h5>
-                <Table>
+                <Table striped highlightOnHover>
                     <thead>
                     <tr>
                         <th>
@@ -407,7 +440,7 @@ export default function Conference2023(_props: InferGetStaticPropsType<typeof ge
                 <h5>
                     Freitag, 19. Mai 2023
                 </h5>
-                <Table>
+                <Table striped highlightOnHover>
                     <thead>
                     <tr>
                         <th>
@@ -450,7 +483,7 @@ export default function Conference2023(_props: InferGetStaticPropsType<typeof ge
                 <h5>
                     Samstag, 20. Mai 2023
                 </h5>
-                <Table>
+                <Table striped highlightOnHover>
                     <thead>
                     <tr>
                         <th>
@@ -501,7 +534,7 @@ export default function Conference2023(_props: InferGetStaticPropsType<typeof ge
                 <h5>
                     Sonntag, 21. Mai 2023
                 </h5>
-                <Table>
+                <Table striped highlightOnHover>
                     <thead>
                     <tr>
                         <th>
@@ -532,14 +565,7 @@ export default function Conference2023(_props: InferGetStaticPropsType<typeof ge
                     </tr>
                     </tbody>
                 </Table>
-
-                <p>
-                    Ansprechpartner Konferenz: Justus Goll (<a
-                    href={"mailto:justus.goll@ksat-stuttgart.de"}>justus.goll@ksat-stuttgart.de</a>)
-                </p>
-            </article>
-        </Container>
-    )
+     */
 }
 
 export const getStaticProps = async (
