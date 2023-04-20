@@ -81,29 +81,12 @@ export default function Conference2023(_props: InferGetStaticPropsType<typeof ge
                         supporting this, please get in touch with us.
                     </p>
 
-                    <AspectRatio ratio={30.3 / 21.6}>
-                        <iframe
-                            src={"/conference/BVSR_Timeline.pdf"}
-                            title={"Timeline for BVSR Conference"}
-                            width={"100%"}
-                            height={"100%"}
-                            style={{
-                                border: 0
-                            }}
-                        />
-                    </AspectRatio>
-
-                    <p>
-                        Contact Partner - Conference: Justus Goll (<a
-                        href={"mailto:justus.goll@ksat-stuttgart.de"}>justus.goll@ksat-stuttgart.de</a>)
-                    </p>
-                </article>
-            </Container>
-        )
-        /*
                     <h3>
                         Program
                     </h3>
+                    <a href={"/conference/BVSR_Timeline.pdf"}>
+                        View the poster of the timeline
+                    </a>
 
                     <h5>
                         Thursday, 18th May 2023
@@ -123,26 +106,50 @@ export default function Conference2023(_props: InferGetStaticPropsType<typeof ge
                         <tbody>
                         <tr>
                             <td>
-                                9:00AM – 12:30PM
+                                9:00AM – 13:00PM
                             </td>
                             <td>
-                                Annual general meeting
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                2:00PM – 7:00PM
-                            </td>
-                            <td>
-                                Opening event and introduction of member groups
+                                Annual general meeting (JHV)
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                8:00PM
+                                2:00PM – 4:00PM
                             </td>
                             <td>
-                                Group dinner
+                                Official greeting by Ms. Anna Christmann
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                4:00PM – 4:30PM
+                            </td>
+                            <td>
+                                Coffee
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                5:00PM – 7:30PM
+                            </td>
+                            <td>
+                                Club presentation & Welcoming of new members
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                7:30PM – 8:00PM
+                            </td>
+                            <td>
+                                Transit to City Center
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                8:00PM - ...
+                            </td>
+                            <td>
+                                Dinner at Brauhaus Stuttgart
                             </td>
                         </tr>
                         </tbody>
@@ -166,10 +173,61 @@ export default function Conference2023(_props: InferGetStaticPropsType<typeof ge
                         <tbody>
                         <tr>
                             <td>
-                                8:30AM – 2:00PM
+                                8:00AM – 8:30AM
                             </td>
                             <td>
-                                External keynotes and student presentations
+                                IRS opens: Snacks
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                8:30AM – 10:00AM
+                            </td>
+                            <td>
+                                Keynote Tesat<br/>
+                                Keynote Edgar Milic, CEO LuxSpace
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                10:00AM – 10:30AM
+                            </td>
+                            <td>
+                                Coffee
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                10:30AM – 12:00PM
+                            </td>
+                            <td>
+                                Keynote Stefan Brieschenk, COO Rocket Factory Augsburg<br/>
+                                Keynote ESA Education<br/>
+                                Keynote Claas Carsten Kohl, Partner Airbus Ventures
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                12:00PM – 12:30PM
+                            </td>
+                            <td>
+                                Coffee
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                12:30PM – 2:00PM
+                            </td>
+                            <td>
+                                "Space Up"
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                2:00PM – 3:00PM
+                            </td>
+                            <td>
+                                Lunch & Coffee
                             </td>
                         </tr>
                         <tr>
@@ -177,15 +235,31 @@ export default function Conference2023(_props: InferGetStaticPropsType<typeof ge
                                 3:00PM – 4:30PM
                             </td>
                             <td>
-                                Guided campus tour
+                                Campus Tour
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                5:00PM – 7:00PM
+                                4:30PM – 5:30PM
+                            </td>
+                            <td>
+                                Campus Tour
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                5:30PM – 7:00PM
                             </td>
                             <td>
                                 Astronaut’s event
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                7:00PM – ...
+                            </td>
+                            <td>
+                                Free time
                             </td>
                         </tr>
                         </tbody>
@@ -209,10 +283,26 @@ export default function Conference2023(_props: InferGetStaticPropsType<typeof ge
                         <tbody>
                         <tr>
                             <td>
-                                9:00AM – 12:30PM
+                                8:00AM – 8:30AM
                             </td>
                             <td>
-                                Workshops
+                                IRS opens: Snacks
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                9:00AM – 12:00PM
+                            </td>
+                            <td>
+                                Workshop
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                12:00PM – 2:00PM
+                            </td>
+                            <td>
+                                Lunch & Coffee
                             </td>
                         </tr>
                         <tr>
@@ -220,23 +310,32 @@ export default function Conference2023(_props: InferGetStaticPropsType<typeof ge
                                 2:00PM – 4:30PM
                             </td>
                             <td>
-                                Workshops
+                                Workshop<br/>
+                                Presentation on final results
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                5:00PM – 7:00PM
+                                4:30PM – 5:30PM
                             </td>
                             <td>
-                                Presentation of workshop results
+                                Coffee
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                7:00PM – 9:00PM
+                                5:30PM – 7:00PM
                             </td>
                             <td>
-                                Group Barbeque
+                                Workshop
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                7:00PM – ...
+                            </td>
+                            <td>
+                                Barbecue
                             </td>
                         </tr>
                         </tbody>
@@ -260,7 +359,15 @@ export default function Conference2023(_props: InferGetStaticPropsType<typeof ge
                         <tbody>
                         <tr>
                             <td>
-                                9:00AM – 11:30AM
+                                8:00AM – 9:30AM
+                            </td>
+                            <td>
+                                IRS opens: Snacks
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                9:30AM – 12:00AM
                             </td>
                             <td>
                                 Start-up introduction event
@@ -268,15 +375,23 @@ export default function Conference2023(_props: InferGetStaticPropsType<typeof ge
                         </tr>
                         <tr>
                             <td>
-                                12:00PM – 1:00PM
+                                12:00PM – ...
                             </td>
                             <td>
-                                Conference recap
+                                Conference recap<br/>
+                                Feedback round & Coffee
                             </td>
                         </tr>
                         </tbody>
                     </Table>
-         */
+
+                    <p>
+                        Contact Partner - Conference: Justus Goll (<a
+                        href={"mailto:justus.goll@ksat-stuttgart.de"}>justus.goll@ksat-stuttgart.de</a>)
+                    </p>
+                </article>
+            </Container>
+        )
     }
 
     return (
@@ -370,29 +485,12 @@ export default function Conference2023(_props: InferGetStaticPropsType<typeof ge
                     Unterstützung haben, kontaktieren Sie uns gerne.
                 </p>
 
-                <AspectRatio ratio={30.3 / 21.6}>
-                    <iframe
-                        src={"/conference/BVSR_Timeline.pdf"}
-                        title={"Timeline for BVSR Conference"}
-                        width={"100%"}
-                        height={"100%"}
-                        style={{
-                            border: 0
-                        }}
-                    />
-                </AspectRatio>
-
-                <p>
-                    Ansprechpartner Konferenz: Justus Goll (<a
-                    href={"mailto:justus.goll@ksat-stuttgart.de"}>justus.goll@ksat-stuttgart.de</a>)
-                </p>
-            </article>
-        </Container>
-    )
-    /*
                 <h3>
                     Program
                 </h3>
+                <a href={"/conference/BVSR_Timeline.pdf"}>
+                    Siehe dir das Poster zum Zeitablauf an
+                </a>
 
                 <h5>
                     Donnerstag, 18. Mai 2023
@@ -412,7 +510,7 @@ export default function Conference2023(_props: InferGetStaticPropsType<typeof ge
                     <tbody>
                     <tr>
                         <td>
-                            9:00 – 12:30 Uhr
+                            9:00 – 13:00 Uhr
                         </td>
                         <td>
                             Jahreshauptversammlung
@@ -420,15 +518,39 @@ export default function Conference2023(_props: InferGetStaticPropsType<typeof ge
                     </tr>
                     <tr>
                         <td>
-                            14:00 – 19:00 Uhr
+                            14:00 – 16:00 Uhr
                         </td>
                         <td>
-                            Eröffnungsveranstaltung und Vorstellung der Vereine
+                            Offizielle Begrüßung durch Fr. Anna Christmann
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            20:00 Uhr
+                            16:00 – 16:30 Uhr
+                        </td>
+                        <td>
+                            Kaffee
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            17:00 – 19:30 Uhr
+                        </td>
+                        <td>
+                            Vorstellung der Vereine & Begrüßung neuer Mitglieder
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            19:30 – 20:00 Uhr
+                        </td>
+                        <td>
+                            Vorstellung der Vereine & Begrüßung neuer Mitglieder
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            20:00 - ... Uhr
                         </td>
                         <td>
                             Gemeinsames Abendessen
@@ -455,15 +577,66 @@ export default function Conference2023(_props: InferGetStaticPropsType<typeof ge
                     <tbody>
                     <tr>
                         <td>
-                            8:30-14:00 Uhr
+                            8:00 - 8:30 Uhr
                         </td>
                         <td>
-                            Externe Gastvorträge und studentische Präsentationen
+                            IRS opens: Snacks
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            15:00-16:30 Uhr
+                            8:30 - 10:00 Uhr
+                        </td>
+                        <td>
+                            Keynote Tesat<br/>
+                            Keynote Edgar Milic, CEO LuxSpace
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            10:00 - 10:30 Uhr
+                        </td>
+                        <td>
+                            Kaffee
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            10:30 - 12:00 Uhr
+                        </td>
+                        <td>
+                            Keynote Stefan Brieschenk, COO Rocket Factory Augsburg<br/>
+                            Keynote ESA Education<br/>
+                            Keynote Claas Carsten Kohl, Partner Airbus Ventures
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            12:00 - 12:30 Uhr
+                        </td>
+                        <td>
+                            Kaffee
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            12:30 - 14:00 Uhr
+                        </td>
+                        <td>
+                            "Space Up"
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            14:00 - 15:00 Uhr
+                        </td>
+                        <td>
+                            Mittagessen & Kaffee
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            15:00 - 16:30 Uhr
                         </td>
                         <td>
                             Campus Führung
@@ -471,10 +644,26 @@ export default function Conference2023(_props: InferGetStaticPropsType<typeof ge
                     </tr>
                     <tr>
                         <td>
-                            17:00-19:00 Uhr
+                            16:30 - 17:30 Uhr
+                        </td>
+                        <td>
+                            Transit
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            17:30 - 19:00 Uhr
                         </td>
                         <td>
                             Astronautenevent
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            19:00 - ... Uhr
+                        </td>
+                        <td>
+                            Freizeit
                         </td>
                     </tr>
                     </tbody>
@@ -498,10 +687,26 @@ export default function Conference2023(_props: InferGetStaticPropsType<typeof ge
                     <tbody>
                     <tr>
                         <td>
-                            9:00 – 12:30 Uhr
+                            8:00 - 8:30 Uhr
                         </td>
                         <td>
-                            Workshops
+                            IRS opens: Snacks
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            9:00 – 12:00 Uhr
+                        </td>
+                        <td>
+                            Workshop
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            12:00 – 14:00 Uhr
+                        </td>
+                        <td>
+                            Mittagessen & Kaffee
                         </td>
                     </tr>
                     <tr>
@@ -509,20 +714,29 @@ export default function Conference2023(_props: InferGetStaticPropsType<typeof ge
                             14:00 – 16:30 Uhr
                         </td>
                         <td>
-                            Workshops
+                            Workshop<br/>
+                            Präsentation der finalen Ergebnisse
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            17:00-19:00 Uhr
+                            16:30 - 17:30 Uhr
                         </td>
                         <td>
-                            Ergebnispräsentation der Workshops
+                            Kaffee
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            19:00-21:00 Uhr
+                            17:30 - 19:00 Uhr
+                        </td>
+                        <td>
+                            Workshop
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            19:00 - ... Uhr
                         </td>
                         <td>
                             Gemeinsames Grillen
@@ -549,7 +763,15 @@ export default function Conference2023(_props: InferGetStaticPropsType<typeof ge
                     <tbody>
                     <tr>
                         <td>
-                            9:00-11:30 Uhr
+                            8:00 - 9:30 Uhr
+                        </td>
+                        <td>
+                            IRS opens: Snacks
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            9:30-12:00 Uhr
                         </td>
                         <td>
                             Start-Up Vorstellungsevent
@@ -557,15 +779,23 @@ export default function Conference2023(_props: InferGetStaticPropsType<typeof ge
                     </tr>
                     <tr>
                         <td>
-                            12:00-13:00 Uhr
+                            12:00 - ... Uhr
                         </td>
                         <td>
-                            Abschlussrunde der Konferenz
+                            Abschlussrunde der Konferenz<br/>
+                            Feedbackrunde & Kaffee
                         </td>
                     </tr>
                     </tbody>
                 </Table>
-     */
+
+                <p>
+                    Ansprechpartner Konferenz: Justus Goll (<a
+                    href={"mailto:justus.goll@ksat-stuttgart.de"}>justus.goll@ksat-stuttgart.de</a>)
+                </p>
+            </article>
+        </Container>
+    )
 }
 
 export const getStaticProps = async (
