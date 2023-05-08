@@ -201,7 +201,6 @@ export default function Conference2023(_props: InferGetStaticPropsType<typeof ge
                                 10:30AM – 12:00PM
                             </td>
                             <td>
-                                Keynote Stefan Brieschenk, COO Rocket Factory Augsburg<br/>
                                 Keynote ESA Education<br/>
                                 Keynote Claas Carsten Kohl, Partner Airbus Ventures
                             </td>
