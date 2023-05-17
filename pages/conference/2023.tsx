@@ -84,7 +84,7 @@ export default function Conference2023(_props: InferGetStaticPropsType<typeof ge
                     <h3>
                         Program
                     </h3>
-                    <a href={"/conference/BVSR_Timeline.pdf"}>
+                    <a href={"/conference/BVSR_Timeline_v2.pdf"}>
                         View the poster of the timeline
                     </a>
 
@@ -487,7 +487,7 @@ export default function Conference2023(_props: InferGetStaticPropsType<typeof ge
                 <h3>
                     Program
                 </h3>
-                <a href={"/conference/BVSR_Timeline.pdf"}>
+                <a href={"/conference/BVSR_Timeline_v2.pdf"}>
                     Siehe dir das Poster zum Zeitablauf an
                 </a>
 
