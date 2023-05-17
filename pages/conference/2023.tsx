@@ -184,6 +184,7 @@ export default function Conference2023(_props: InferGetStaticPropsType<typeof ge
                                 8:30AM – 10:00AM
                             </td>
                             <td>
+                                Keynote Institute of Space System, University of Stuttgart<br/>
                                 Keynote Tesat<br/>
                                 Keynote Edgar Milic, CEO LuxSpace
                             </td>
@@ -587,6 +588,7 @@ export default function Conference2023(_props: InferGetStaticPropsType<typeof ge
                             8:30 - 10:00 Uhr
                         </td>
                         <td>
+                            Keynote Institut für Raumfahrtsysteme, Universität Stuttgart<br/>
                             Keynote Tesat<br/>
                             Keynote Edgar Milic, CEO LuxSpace
                         </td>
