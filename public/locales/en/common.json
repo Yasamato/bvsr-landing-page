@@ -33,15 +33,23 @@
     },
     "1st_conference": {
       "title": "1st BVSR Conference",
-      "text": "1st BVSR Conference in Munich"
+      "text": "Over 80 registered participants participated at the 1st BVSR Conference in Munich"
+    },
+    "join_erig_sta_bears": {
+      "title": "Addition of ERIG e.V., STA e.V. & BEARS e.V.",
+      "text": "The associations ExperimentalRaumfahrt-InteressenGemeinschaft e.V. & Space Team Aachen e.V. joined the BVSR during the annual general meeting as well as Berlin Experimental Astronautics Research Student Team e.V. with reservation"
     },
     "2nd_conference": {
       "title": "2nd BVSR Conference",
-      "text": "2nd BVSR Conference in Stuttgart"
+      "text": "Over 140 registered participants participated at the 2nd BVSR Conference in Stuttgart"
     },
     "3rd_conference": {
       "title": "3rd BVSR Conference",
       "text": "3rd BVSR Conference in Friedrichshafen"
+    },
+    "4th_conference": {
+      "title": "4th BVSR Conference",
+      "text": "4th BVSR Conference in Aachen"
     }
   }
 }

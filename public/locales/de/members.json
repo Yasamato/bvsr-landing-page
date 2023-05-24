@@ -1,12 +1,15 @@
 {
   "members": "Mitglieder",
   "visit": "Besuche",
-  "warr_desc": "WARR e.V. was founded during the space race in the 1960s and is Germany's largest student space group. It is located in Munich.",
-  "ksat_desc": "KSat e.V. is a student space group at the University of Stuttgart, focusing on small Satellites and Experiments in Microgravity.",
-  "tudsat_desc": "TUDSaT e.V. is located at the University of Darmstadt and focus on satellites and rocketry.",
-  "hyend_desc": "HyEnD e.V. stands for Hybrid Engine Development. Like KSat it is located at the University of Stuttgart. Rocketry is the main focus of HyEnD.",
-  "star_desc": "STAR Dresden e.V. is the student space group at TU Dresden and is working on all kinds of space related topics, including rocketry, rovers and space elevators!",
-  "seesat_desc": "SeeSat e.V. is located at the DHBW in Friedrichshafen. They develop a satellite for wildfire detection.",
-  "wuespace_desc": "WüSpace e.V. is developing various Soft- and Hardware for space projects. It is located in Würzburg.",
-  "far_desc": "FAR e.V. is a nationwide association, that focuses mainly on rocketry. Unlike the other associations, they are not linked to a University."
+  "warr_desc": "WARR e.V. ist angesiedelt in München, wurde während des \"Space Race\" in den 1960er gegründet und ist Deutschlands größte Space-Studentengruppe.",
+  "ksat_desc": "KSat e.V. ist eine Space-Studentengruppe an der Universität Stuttgart, fokusiert auf Kleinsatelliten und Experimente in Mikrogravität.",
+  "tudsat_desc": "TUDSaT e.V. ist angesiedelt an der TU Darmstadt und fokusiert auf Satelliten und Raketen.",
+  "hyend_desc": "HyEnD e.V. steht für Hybrid Engine Development. Wie KSat sind sie an der University Stuttgart. Raketentechnik ist der Hauptfokus von HyEnD.",
+  "star_desc": "STAR Dresden e.V. ist eine Space-Studentengruppe an der TU Dresden und arbeitet an allen möglichen weltraum-bezogenen Themen, inklusive Raketen, Rover und Weltraumaufzügen!",
+  "seesat_desc": "SeeSat e.V. ist an der DHBW in Friedrichshafen. Sie entwickeln einen Satelliten zur Wildfeuererkennung.",
+  "wuespace_desc": "WüSpace e.V. entwickelt verschiedene Soft- und Hardware für Weltraumprojekte. Ihr Sitz ist in Würzburg.",
+  "far_desc": "FAR e.V. ist eine nationale Assoziation, welche hauptsächlich auf Raktentechnik fokusiert ist. Im Gegensatz zu den anderen Vereinen sind sie an keiner Universität angesiedelt.",
+  "sta_desc": "Space Team Aachen e.V. machen einfach alles mit Raumfahrt in Aache. Guck mal sonst gerne bei techaachen.de",
+  "erig_desc": "ExperimentalRaumfahrt-InteressenGemeinschaft e.V.",
+  "bears_desc": "BEARS e.V. ist der erste studentische Raumfahrtverein in der Hauptstadt. Die Leidenschaft für Rakten, Roboter, Wissenschaft und alles was noch kommt ist grenzenlos in Berlin!"
 }

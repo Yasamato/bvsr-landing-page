@@ -21,7 +21,7 @@ function MemberCard({img, name, description, link}: MemberCardProps) {
 
     return (
         <div style={{margin: 'auto'}}>
-            <Card shadow="sm" p="lg" style={{height: 400}}>
+            <Card shadow="sm" p="lg" style={{height: 420}}>
                 <div style={{
                     display: "flex",
                     justifyContent: "space-between",
