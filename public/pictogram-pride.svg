@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Ebene_2" data-name="Ebene 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 255 128">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #008026;
+      }
+
+      .cls-2 {
+        fill: #2142ab;
+      }
+
+      .cls-3 {
+        clip-path: url(#clippath-1);
+      }
+
+      .cls-4 {
+        fill: #004dff;
+      }
+
+      .cls-5 {
+        fill: #ff8c00;
+      }
+
+      .cls-6 {
+        fill: #e40303;
+      }
+
+      .cls-7 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-8 {
+        fill: none;
+      }
+
+      .cls-9 {
+        fill: #750787;
+      }
+
+      .cls-10 {
+        fill: #ffed00;
+      }
+    </style>
+    <clipPath id="clippath">
+      <path class="cls-8" d="m39.24,127S129.24,21.09,241.04,13.61C140.56,59.48,102.82,127,102.82,127h-63.57Z"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <path class="cls-8" d="m0,0v128h31.19c1.3-1.5,2.6-2.99,3.91-4.48,22.83-25.32,48.7-47.9,76.98-66.88,32.24-21.72,68.17-38.89,106.6-45.73,7.72-1.27,15.51-2.52,23.35-2.59,3.5-.55,8.24,1.46,7.32,5.74-.97,3.32-4.56,4.72-7.33,6.21-30.06,14.03-58.48,31.72-83.67,53.49-18.29,16.06-35.35,33.74-48.55,54.23h145.2V0H0Z"/>
+    </clipPath>
+  </defs>
+  <g id="Ebene_1-2" data-name="Ebene 1">
+    <g>
+      <g id="layer3">
+        <g class="cls-7">
+          <g id="g882">
+            <rect id="rect858" class="cls-9" x="39" y="14" width="202" height="113"/>
+            <rect id="rect860" class="cls-4" x="39" y="14" width="202" height="94"/>
+            <rect id="rect862" class="cls-1" x="39" y="14" width="202" height="76"/>
+            <rect id="rect864" class="cls-10" x="39" y="14" width="202" height="57"/>
+            <rect id="rect866" class="cls-5" x="39" y="14" width="202" height="38"/>
+            <rect id="rect868" class="cls-6" x="39" y="14" width="202" height="19"/>
+          </g>
+        </g>
+      </g>
+      <g id="layer1">
+        <g class="cls-3">
+          <circle id="path846" class="cls-2" cx="127.65" cy="127.29" r="113.39"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

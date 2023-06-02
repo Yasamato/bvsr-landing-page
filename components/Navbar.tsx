@@ -67,7 +67,7 @@ const Navbar = ({t}: WithTranslation) => {
                 <div className={classes.inner}>
                     <Link href={"/"} className={classes.link}>
                         <Image height={32} width={64}
-                               src={"/square-pride.svg"}
+                               src={"/pictogram-pride.svg"}
                                alt={"BVSR logo"}
                                priority={true}
                                style={{

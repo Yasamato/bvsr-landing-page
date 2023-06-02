@@ -69,7 +69,7 @@ function HeroContent({t}: WithTranslation) {
 
             <Center>
                 <Image height={132} width={240}
-                       src={"/square-pride.svg"}
+                       src={"/pictogram-pride.svg"}
                        alt={"BVSR logo"}
                        priority={true}
                        style={{
