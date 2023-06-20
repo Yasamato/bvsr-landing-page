@@ -9,24 +9,24 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@mantine/core": "^6.0.11",
-    "@mantine/hooks": "^6.0.11",
-    "@mantine/next": "^6.0.11",
-    "@tabler/icons-react": "^2.19.0",
+    "@mantine/core": "^6.0.14",
+    "@mantine/hooks": "^6.0.14",
+    "@mantine/next": "^6.0.14",
+    "@tabler/icons-react": "^2.22.0",
     "i18next": "^22.4.15",
-    "next": "^13.4.2",
+    "next": "^13.4.6",
     "next-i18next": "^13.2.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-i18next": "^12.2.2",
+    "react-i18next": "^12.3.1",
     "sharp": "^0.32.1"
   },
   "devDependencies": {
-    "@types/node": "^20.1.7",
-    "@types/react": "^18.2.6",
-    "@types/react-dom": "^18.2.4",
-    "eslint": "^8.40.0",
-    "eslint-config-next": "^13.4.2",
-    "typescript": "^5.0.4"
+    "@types/node": "^20.3.1",
+    "@types/react": "^18.2.13",
+    "@types/react-dom": "^18.2.6",
+    "eslint": "^8.43.0",
+    "eslint-config-next": "^13.4.6",
+    "typescript": "^5.1.3"
   }
 }
