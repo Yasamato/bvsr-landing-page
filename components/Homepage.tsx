@@ -10,7 +10,7 @@ import hyendLogo from "/public/logos/HyEnd.png"
 import tudsatLogo from "/public/logos/TUDSaT.png"
 import ksatLogo from "/public/logos/KSat.png"
 import warrLogo from "/public/logos/WARR.svg"
-import staLogo from "/public/logos/STA.png"
+import staLogo from "/public/logos/STA.svg"
 import erigLogo from "/public/logos/ERIG.png"
 import bearsLogo from "/public/logos/BEARS.png"
 import {Trans, withTranslation, WithTranslation} from 'next-i18next'
