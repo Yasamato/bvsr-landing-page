@@ -1,16 +1,14 @@
 import "../public/global.css"
 import type {AppProps} from 'next/app'
-import {MantineProvider, SegmentedControl} from "@mantine/core"
+import {MantineProvider} from "@mantine/core"
 import Head from "next/head"
 import React from "react"
 import {appWithTranslation} from 'next-i18next'
 import Footer from "../components/Footer"
 import nextI18NextConfig from "../next-i18next.config.js"
-import {useRouter} from "next/router"
 import Navbar from "../components/Navbar";
 
 function MyApp({Component, pageProps}: AppProps) {
-    const router = useRouter()
 
     return <>
         <Head>

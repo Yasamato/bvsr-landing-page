@@ -1,6 +1,6 @@
 import HeroContentLeft from "./HeroContent"
 import MemberCard from "../components/MemberCard"
-import {Alert, Card, Container, Grid, Text, Timeline, Title} from "@mantine/core"
+import {Card, Container, Grid, Text, Timeline, Title} from "@mantine/core"
 import React from "react"
 import farLogo from "/public/logos/FAR.jpg"
 import wueSpaceLogo from "/public/logos/wue_space.png"
@@ -13,9 +13,8 @@ import warrLogo from "/public/logos/WARR.svg"
 import staLogo from "/public/logos/STA.svg"
 import erigLogo from "/public/logos/ERIG.png"
 import bearsLogo from "/public/logos/BEARS.png"
-import {Trans, withTranslation, WithTranslation} from 'next-i18next'
+import {withTranslation, WithTranslation} from 'next-i18next'
 import Meta from "../components/Meta"
-import Link from "next/link"
 
 
 const Homepage = ({t}: WithTranslation) => {
