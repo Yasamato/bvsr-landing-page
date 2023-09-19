@@ -21,7 +21,7 @@ function MemberCard({img, name, description, link}: MemberCardProps) {
 
     return (
         <div style={{margin: 'auto'}}>
-            <Card shadow="sm" p="lg" style={{height: 420}}>
+            <Card shadow="sm" p="lg" style={{height: 440}}>
                 <div style={{
                     display: "flex",
                     justifyContent: "space-between",
@@ -40,7 +40,7 @@ function MemberCard({img, name, description, link}: MemberCardProps) {
                             <Text weight={500}>{name}</Text>
                         </Group>
 
-                        <Text size="sm" style={{color: secondaryColor, lineHeight: 1.5, flexGrow: 1}}>
+                        <Text size="sm" style={{color: secondaryColor, lineHeight: 1.5, flexGrow: 1}} lineClamp={6}>
                             {description}
                         </Text>
                     </div>
