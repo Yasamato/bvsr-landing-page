@@ -51,7 +51,16 @@ const nextConfig = {
         ]
     },
     output: 'standalone',
-    reactStrictMode: true
+    reactStrictMode: true,
+    async redirects() {
+        return [
+            {
+                source: '/liftoff',
+                destination: 'https://bvsrliftoff.eventbrite.co.uk/',
+                permanent: false,
+            },
+        ]
+    },
 }
 
 module.exports = nextConfig
