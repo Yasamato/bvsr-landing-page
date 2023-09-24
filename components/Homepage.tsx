@@ -1,4 +1,4 @@
-import HeroContentLeft from "./HeroContent"
+import HeroContentLeft from "./HeroContent/HeroContent"
 import MemberCard from "../components/MemberCard"
 import {Card, Container, Grid, Text, Timeline, Title} from "@mantine/core"
 import React from "react"
@@ -129,77 +129,77 @@ const Homepage = ({t}: WithTranslation) => {
                 </Title>
 
                 <Grid gutter={"sm"}>
-                    <Grid.Col lg={4} sm={6}>
+                    <Grid.Col span={{ base: 12, sm: 6, lg: 4 }}>
                         <MemberCard
                             img={warrLogo}
                             name={"WARR"}
                             description={t('warr_desc', {ns: 'members'})}
                             link={"https://warr.de"}/>
                     </Grid.Col>
-                    <Grid.Col lg={4} sm={6}>
+                    <Grid.Col span={{ base: 12, sm: 6, lg: 4 }}>
                         <MemberCard
                             img={ksatLogo}
                             name={"KSat"}
                             description={t('ksat_desc', {ns: 'members'})}
                             link={"https://www.ksat-stuttgart.de"}/>
                     </Grid.Col>
-                    <Grid.Col lg={4} sm={6}>
+                    <Grid.Col span={{ base: 12, sm: 6, lg: 4 }}>
                         <MemberCard
                             img={tudsatLogo}
                             name={"TUDSaT"}
                             description={t('tudsat_desc', {ns: 'members'})}
                             link={"https://tudsat.space"}/>
                     </Grid.Col>
-                    <Grid.Col lg={4} sm={6}>
+                    <Grid.Col span={{ base: 12, sm: 6, lg: 4 }}>
                         <MemberCard
                             img={hyendLogo}
                             name={"HyEnD"}
                             description={t('hyend_desc', {ns: 'members'})}
                             link={"https://hyend.de"}/>
                     </Grid.Col>
-                    <Grid.Col lg={4} sm={6}>
+                    <Grid.Col span={{ base: 12, sm: 6, lg: 4 }}>
                         <MemberCard
                             img={starLogo}
                             name={"STAR Dresden"}
                             description={t('star_desc', {ns: 'members'})}
                             link={"https://star-dresden.de"}/>
                     </Grid.Col>
-                    <Grid.Col lg={4} sm={6}>
+                    <Grid.Col span={{ base: 12, sm: 6, lg: 4 }}>
                         <MemberCard
                             img={seeSatLogo}
                             name={"SeeSat"}
                             description={t('seesat_desc', {ns: 'members'})}
                             link={"https://seesat.eu"}/>
                     </Grid.Col>
-                    <Grid.Col lg={4} sm={6}>
+                    <Grid.Col span={{ base: 12, sm: 6, lg: 4 }}>
                         <MemberCard
                             img={wueSpaceLogo}
                             name={"WüSpace"}
                             description={t('wuespace_desc', {ns: 'members'})}
                             link={"https://www.wuespace.de"}/>
                     </Grid.Col>
-                    <Grid.Col lg={4} sm={6}>
+                    <Grid.Col span={{ base: 12, sm: 6, lg: 4 }}>
                         <MemberCard
                             img={farLogo}
                             name={"FAR"}
                             description={t('far_desc', {ns: 'members'})}
                             link={"https://alternative-raumfahrt.de"}/>
                     </Grid.Col>
-                    <Grid.Col lg={4} sm={6}>
+                    <Grid.Col span={{ base: 12, sm: 6, lg: 4 }}>
                         <MemberCard
                             img={staLogo}
                             name={"STA"}
                             description={t('sta_desc', {ns: 'members'})}
                             link={"https://www.spaceteamaachen.de"}/>
                     </Grid.Col>
-                    <Grid.Col lg={4} sm={6}>
+                    <Grid.Col span={{ base: 12, sm: 6, lg: 4 }}>
                         <MemberCard
                             img={erigLogo}
                             name={"ERIG"}
                             description={t('erig_desc', {ns: 'members'})}
                             link={"https://er-ig.de/"}/>
                     </Grid.Col>
-                    <Grid.Col lg={4} sm={6}>
+                    <Grid.Col span={{ base: 12, sm: 6, lg: 4 }}>
                         <MemberCard
                             img={bearsLogo}
                             name={"BEARS"}

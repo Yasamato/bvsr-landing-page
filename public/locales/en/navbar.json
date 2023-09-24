@@ -2,5 +2,9 @@
   "conferences": "Conferences",
   "conference": {
     "bvsr_2023": "2nd BVSR Conference 2023"
+  },
+  "events": "Events",
+  "event": {
+    "liftoff": "BVSR-Liftoff"
   }
 }

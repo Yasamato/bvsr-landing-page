@@ -1,12 +1,13 @@
+import "@mantine/core/styles.css"
 import "../public/global.css"
 import type {AppProps} from 'next/app'
-import {MantineProvider} from "@mantine/core"
+import {AppShell, MantineProvider} from "@mantine/core"
 import Head from "next/head"
 import React from "react"
 import {appWithTranslation} from 'next-i18next'
 import Footer from "../components/Footer"
 import nextI18NextConfig from "../next-i18next.config.js"
-import Navbar from "../components/Navbar";
+import Navbar from "../components/Navbar/Navbar";
 
 function MyApp({Component, pageProps}: AppProps) {
 
@@ -21,21 +22,16 @@ function MyApp({Component, pageProps}: AppProps) {
         <MantineProvider
             theme={{
                 fontFamily: 'Maven Pro, sans-serif',
-                headings: {fontFamily: 'Maven Pro, sans-serif'},
-                colorScheme: 'light',
-                colors: {
-                    'akzent': ['#2142ab'],
-                },
-                primaryColor: 'akzent'
-            }}
-            withGlobalStyles
-            withNormalizeCSS>
-            <Navbar useSuspense={false}/>
-            <main style={{backgroundColor: "#eee", paddingBottom: "2rem", minHeight: "calc(100vh - 40px)"}}>
-                <Component {...pageProps} />
-            </main>
+                headings: {fontFamily: 'Maven Pro, sans-serif'}
+            }}>
+            <AppShell header={{height: 56}}>
+                <Navbar useSuspense={false}/>
+                <main style={{backgroundColor: "#eee", paddingBottom: "2rem", minHeight: "calc(100vh - 40px)"}}>
+                    <Component {...pageProps} />
+                </main>
 
-            <Footer useSuspense={false}/>
+                <Footer useSuspense={false}/>
+            </AppShell>
         </MantineProvider>
     </>
 }
