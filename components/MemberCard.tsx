@@ -34,8 +34,8 @@ function MemberCard({img, name, description, link}: MemberCardProps) {
                                 </div>
                             </Link>
                         </Card.Section>
-                        <Group position="apart" style={{marginBottom: 5, marginTop: theme.spacing.sm}}>
-                            <Text weight={500}>{name}</Text>
+                        <Group style={{marginBottom: 5, marginTop: theme.spacing.sm}}>
+                            <Text>{name}</Text>
                         </Group>
 
                         <Text size="sm" style={{color: secondaryColor, lineHeight: 1.5, flexGrow: 1}} lineClamp={6}>
