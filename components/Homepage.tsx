@@ -204,7 +204,7 @@ const Homepage = ({t}: WithTranslation) => {
                             img={bearsLogo}
                             name={"BEARS"}
                             description={t('bears_desc', {ns: 'members'})}
-                            link={"https://www.tu.berlin/raumfahrttechnik/studium-lehre/studentische-iniativen/bears"}/>
+                            link={"https://www.tu.berlin/raumfahrttechnik/studium-lehre/studentische-initiativen/bears"}/>
                     </Grid.Col>
 
                 </Grid>
