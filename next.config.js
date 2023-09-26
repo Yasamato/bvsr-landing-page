@@ -50,7 +50,6 @@ const nextConfig = {
             }
         ]
     },
-    output: 'standalone',
     reactStrictMode: true,
     async redirects() {
         return [
