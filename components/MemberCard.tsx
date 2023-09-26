@@ -15,9 +15,7 @@ function MemberCard({img, name, description, link}: MemberCardProps) {
     const {t} = useTranslation(['members'])
     const theme = useMantineTheme();
 
-    const secondaryColor = theme.colorScheme === 'dark'
-        ? theme.colors.dark[1]
-        : theme.colors.gray[7]
+    const secondaryColor = theme.colors.gray[7]
 
     return (
         <div style={{margin: 'auto'}}>
