@@ -31,9 +31,13 @@ export default function Liftoff() {
                     Wir sind hier, um deinen Traum von der Raumfahrt Realität werden zu lassen!
                 </p>
                 <div style={{
-                    position: "relative"
+                    position: "relative",
+                    minHeight: "500px"
                 }}>
-                    <Image src={imageConference} alt={"Gruppenbild der BVSR Konferenz 2023 in Stuttgart"}/>
+                    <Image src={imageConference} alt={"Gruppenbild der BVSR Konferenz 2023 in Stuttgart"} fill={true}
+                           style={{
+                               objectFit: "cover"
+                           }}/>
                 </div>
 
                 <h2>
@@ -44,7 +48,7 @@ export default function Liftoff() {
                     Hier sind die Eckdaten, die du nicht verpassen darfst, sowie unsere Agenda:
                 </p>
                 <Grid justify="flex-start" align="stretch">
-                    <Grid.Col span={{base: 12, md: 6, lg: 3}}>
+                    <Grid.Col span={{base: 12, md: 6, lg: 4}}>
                         <ul>
                             <li>
                                 <b>Wo:</b> Technologie- und Gründerzentrum Würzburg (TGZ) - Magdalene-Schoch-Straße 5.
@@ -59,8 +63,16 @@ export default function Liftoff() {
                             </li>
                         </ul>
                     </Grid.Col>
-                    <Grid.Col span={{base: 12, md: 6, lg: 9}}>
-                        <Image src={imageTgz} alt={"Bild des Zentrum für Telematik Gebäudes"}/>
+                    <Grid.Col span={{base: 12, md: 6, lg: 8}}>
+                        <div style={{
+                            position: "relative",
+                            minHeight: "300px"
+                        }}>
+                            <Image src={imageTgz} alt={"Bild des Zentrum für Telematik Gebäudes"} fill={true}
+                                   style={{
+                                       objectFit: "cover"
+                                   }}/>
+                        </div>
                     </Grid.Col>
                 </Grid>
 
@@ -171,11 +183,19 @@ export default function Liftoff() {
                 </h2>
 
                 <Grid justify="flex-start" align="stretch">
-                    <Grid.Col span={{base: 12, md: 6, lg: 9}}>
-                        <Image src={imageSpeaker}
-                               alt={"A speaker during the BVSR conference 2023 in Stuttgart"}/>
+                    <Grid.Col span={{base: 12, md: 6, lg: 8}}>
+                        <div style={{
+                            position: "relative",
+                            minHeight: "300px"
+                        }}>
+                            <Image src={imageSpeaker}
+                                   alt={"A speaker during the BVSR conference 2023 in Stuttgart"} fill={true}
+                                   style={{
+                                       objectFit: "cover"
+                                   }}/>
+                        </div>
                     </Grid.Col>
-                    <Grid.Col span={{base: 12, md: 6, lg: 3}}>
+                    <Grid.Col span={{base: 12, md: 6, lg: 4}}>
                         Die Frage lautet nicht nur &ldquo;Wer wird dabei sein?&rdquo;, sondern &ldquo;Wirst du dabei
                         sein?&rdquo; Du, als angehender Raumfahrtenthusiast oder visionärer Gründer, stehst im
                         Mittelpunkt unserer Veranstaltung. Aber das ist noch nicht alles! Du wirst die Möglichkeit
