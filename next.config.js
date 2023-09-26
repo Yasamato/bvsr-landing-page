@@ -51,6 +51,9 @@ const nextConfig = {
         ]
     },
     output: 'standalone',
+    images: {
+        domains: ['bvsr.space', 'www.bvsr.space'],
+    },
     reactStrictMode: true,
     async redirects() {
         return [

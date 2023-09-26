@@ -31,12 +31,13 @@ export default function Liftoff() {
                     Wir sind hier, um deinen Traum von der Raumfahrt Realität werden zu lassen!
                 </p>
                 <div style={{
-                    position: "relative",
-                    minHeight: "500px"
+                    position: "relative"
                 }}>
-                    <Image src={imageConference} alt={"Gruppenbild der BVSR Konferenz 2023 in Stuttgart"} fill={true}
+                    <Image src={imageConference} alt={"Gruppenbild der BVSR Konferenz 2023 in Stuttgart"}
+                           sizes="100vw"
                            style={{
-                               objectFit: "cover"
+                               width: '100%',
+                               height: 'auto',
                            }}/>
                 </div>
 
@@ -65,12 +66,13 @@ export default function Liftoff() {
                     </Grid.Col>
                     <Grid.Col span={{base: 12, md: 6, lg: 8}}>
                         <div style={{
-                            position: "relative",
-                            minHeight: "300px"
+                            position: "relative"
                         }}>
-                            <Image src={imageTgz} alt={"Bild des Zentrum für Telematik Gebäudes"} fill={true}
+                            <Image src={imageTgz} alt={"Bild des Zentrum für Telematik Gebäudes"}
+                                   sizes="100vw"
                                    style={{
-                                       objectFit: "cover"
+                                       width: '100%',
+                                       height: 'auto',
                                    }}/>
                         </div>
                     </Grid.Col>
@@ -185,13 +187,14 @@ export default function Liftoff() {
                 <Grid justify="flex-start" align="stretch">
                     <Grid.Col span={{base: 12, md: 6, lg: 8}}>
                         <div style={{
-                            position: "relative",
-                            minHeight: "300px"
+                            position: "relative"
                         }}>
                             <Image src={imageSpeaker}
-                                   alt={"A speaker during the BVSR conference 2023 in Stuttgart"} fill={true}
+                                   alt={"A speaker during the BVSR conference 2023 in Stuttgart"}
+                                   sizes="100vw"
                                    style={{
-                                       objectFit: "cover"
+                                       width: '100%',
+                                       height: 'auto',
                                    }}/>
                         </div>
                     </Grid.Col>
