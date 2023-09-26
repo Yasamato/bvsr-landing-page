@@ -1,7 +1,7 @@
 import {
     AppShell,
     SegmentedControl,
-    Group, Menu, Center
+    Menu, Center
 } from "@mantine/core"
 import Link from "next/link"
 import React from "react"
