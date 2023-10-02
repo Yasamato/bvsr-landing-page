@@ -26,7 +26,12 @@ function MyApp({Component, pageProps}: AppProps) {
             }}>
             <AppShell header={{height: 56}}>
                 <Navbar useSuspense={false}/>
-                <main style={{backgroundColor: "#eee", paddingBottom: "2rem", minHeight: "calc(100vh - 40px)"}}>
+                <main style={{
+                    backgroundColor: "#eee",
+                    paddingBottom: "2rem",
+                    paddingTop: "4rem",
+                    minHeight: "calc(100vh - 40px)"
+                }}>
                     <Component {...pageProps} />
                 </main>
 

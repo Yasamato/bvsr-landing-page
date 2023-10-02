@@ -1,22 +1,35 @@
 import React from "react"
 import {serverSideTranslations} from "next-i18next/serverSideTranslations"
 import nextI18NextConfig from '../../next-i18next.config.js'
-import {Container, Grid, Table} from "@mantine/core";
+import {Button, Container, Grid, Table} from "@mantine/core";
 import Meta from "../../components/Meta";
 import Image from "next/image";
 import imageConference from "../../public/event/liftoff/conference2023.jpg"
 import imageSpeaker from "../../public/event/liftoff/speaker.jpg"
 import imageTgz from "../../public/event/liftoff/tgz.jpg"
+import Link from "next/link";
 
 
 export default function Liftoff() {
     return (
-        <Container pt={"xl"}>
+        <Container>
             <Meta description={""} title={"BVSR Event Liftoff"}/>
             <article>
                 <h1>
                     BVSR-Liftoff
                 </h1>
+
+                <div style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center"
+                }}>
+                    <Link href={"/liftoff"}>
+                        <Button>
+                            Event Anmeldung
+                        </Button>
+                    </Link>
+                </div>
 
                 <h2>
                     Wer sind wir und was ist das Ziel von BVSR-Liftoff?

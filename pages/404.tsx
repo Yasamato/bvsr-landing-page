@@ -12,26 +12,26 @@ export default function error404() {
                 <title>Page not found | Bundesverband studentischer Raumfahrt</title>
                 <meta name="robots" content="noindex,noarchive,follow"/>
             </Head>
-        <Container py={"xl"}>
-            <Center>
-                <Image height={132} width={240} src={bvsrLogo} alt={"BVSR logo"}/>
-            </Center>
-            <Title style={{textAlign: "center"}} mb={"xl"}>
-                Bundesverband<br/>studentischer Raumfahrt
-            </Title>
+            <Container>
+                <Center>
+                    <Image height={132} width={240} src={bvsrLogo} alt={"BVSR logo"}/>
+                </Center>
+                <Title style={{textAlign: "center"}} mb={"xl"}>
+                    Bundesverband<br/>studentischer Raumfahrt
+                </Title>
 
-            <Alert variant={"filled"} color={"red"} my={"xl"}>
-                Error 404 | You seem to have visited an unknown page
-            </Alert>
+                <Alert variant={"filled"} color={"red"} my={"xl"}>
+                    Error 404 | You seem to have visited an unknown page
+                </Alert>
 
-            <Center>
-                <Link href={"/"}>
-                    <Button color="green">
-                        Go back
-                    </Button>
-                </Link>
-            </Center>
-        </Container>
+                <Center>
+                    <Link href={"/"}>
+                        <Button color="green">
+                            Go back
+                        </Button>
+                    </Link>
+                </Center>
+            </Container>
         </>
     )
 }

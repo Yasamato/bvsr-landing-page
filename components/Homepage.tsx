@@ -31,7 +31,7 @@ const Homepage = ({t}: WithTranslation) => {
             <Meta description={t("hero_label")} title={"Bundesverband studentischer Raumfahrt"}/>
             <HeroContentLeft/>
 
-            <Container pt={"xl"}>
+            <Container>
 
                 <Card my={"xl"}>
                     <Title order={2} m={"xl"}>

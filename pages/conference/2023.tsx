@@ -10,7 +10,7 @@ export default function Conference2023(_props: InferGetStaticPropsType<typeof ge
 
     if (_props.locale == "en") {
         return (
-            <Container pt={"xl"}>
+            <Container>
                 <Meta description={""} title={"BVSR Conference 2023"}/>
                 <article>
                     <h1>
