@@ -1,15 +1,9 @@
 # Install dependencies only when needed
-FROM oven/bun:1.0.11-alpine AS deps
+FROM oven/bun:1.0.11-alpine AS builder
 WORKDIR /app
 
 COPY package.json bun.lockb ./
 RUN bun install --production --frozen-lockfile
-
-# Rebuild the source code only when needed
-FROM oven/bun:1.0.11-alpine AS builder
-WORKDIR /app
-
-COPY --from=deps /app/node_modules ./node_modules
 
 COPY . .
 RUN bun run build
