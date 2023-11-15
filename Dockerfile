@@ -1,20 +1,21 @@
 # Install dependencies only when needed
-FROM node:20.7-alpine AS deps
+FROM oven/bun:1.0.11-alpine AS deps
 WORKDIR /app
 
-COPY package.json package-lock.json ./
-RUN npm ci
+COPY package.json bun.lockb ./
+RUN bun install --production --frozen-lockfile
 
 # Rebuild the source code only when needed
-FROM node:20.7-alpine AS builder
+FROM oven/bun:1.0.11-alpine AS builder
 WORKDIR /app
 
 COPY --from=deps /app/node_modules ./node_modules
+
 COPY . .
-RUN npm run build
+RUN bun run build
 
 # Production image, copy all the files and run next
-FROM node:20.7-alpine AS runner
+FROM oven/bun:1.0.11-alpine AS runner
 WORKDIR /app
 
 # You only need to copy next.config.js if you are NOT using the default configuration
@@ -34,5 +35,4 @@ LABEL org.opencontainers.image.url="https://bvsr.space" \
       org.opencontainers.image.title="BVSR Landing page" \
       maintainer="Yasamato <https://github.com/Yasamato>"
 
-#CMD ["sh", "-c", "npm run start"]
-CMD ["sh", "-c", "node server.js"]
+CMD ["sh", "-c", "bun server.js"]
