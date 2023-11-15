@@ -1,0 +1,20 @@
+{
+  "conferences": "Konferenzen",
+  "conference": {
+    "2024": {
+      "name": "2024 Friedrichshafen",
+      "description": "3. BVSR Konferenz 2024 in Friedrichshafen"
+    },
+    "2023": {
+      "name": "2023 Stuttgart",
+      "description": "2. BVSR Konferenz 2023 in Stuttgart"
+    }
+  },
+  "events": "Events",
+  "event": {
+    "liftoff": {
+      "name": "BVSR-Liftoff",
+      "description": ""
+    }
+  }
+}

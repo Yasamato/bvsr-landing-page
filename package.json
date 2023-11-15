@@ -3,32 +3,38 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "next dev",
+    "lint": "next lint",
+    "start": "next start"
   },
   "dependencies": {
-    "3": "^2.1.0",
-    "@mantine/core": "^7.2.2",
-    "@mantine/hooks": "^7.2.2",
-    "@tabler/icons-react": "^2.40.0",
+    "@headlessui/react": "^1.7.17",
+    "@heroicons/react": "^2.0.18",
+    "accept-language": "^3.0.18",
     "i18next": "^23.7.6",
+    "i18next-resources-to-backend": "^1.2.0",
     "next": "14.0.2",
-    "next-i18next": "^15.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-i18next": "^13.4.1",
     "sharp": "^0.32.6"
   },
   "devDependencies": {
+    "@types/eslint": "^8.44.2",
     "@types/node": "^20.9.0",
     "@types/react": "^18.2.37",
     "@types/react-dom": "^18.2.15",
     "@typescript-eslint/eslint-plugin": "^6.11.0",
     "@typescript-eslint/parser": "^6.11.0",
+    "autoprefixer": "^10.4.14",
+    "bun-types": "^1.0.11",
     "eslint": "^8.53.0",
     "eslint-config-next": "^14.0.2",
+    "postcss": "^8.4.27",
+    "prettier": "^3.0.0",
+    "prettier-plugin-tailwindcss": "^0.5.1",
+    "tailwindcss": "^3.3.3",
     "typescript": "^5.2.2"
   }
 }
