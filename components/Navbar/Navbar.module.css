@@ -33,6 +33,7 @@
     border-radius: var(--mantine-radius-sm);
     font-size: var(--mantine-font-size-sm);
     font-weight: 500;
+    height: 48px;
 }
 
 .linkLabel {

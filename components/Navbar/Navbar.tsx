@@ -90,6 +90,10 @@ const Navbar = ({ t }: WithTranslation) => {
               </Menu.Item>
             </Menu.Dropdown>
           </Menu>
+
+          <Link href={"https://links.bvsr.space"} className={classes.link}>
+            Internal Services
+          </Link>
         </div>
 
         <SegmentedControl
