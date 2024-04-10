@@ -5,6 +5,7 @@ import common from "public/locales/de/common.json";
 import footer from "public/locales/de/footer.json";
 import members from "public/locales/de/members.json";
 import navbar from "public/locales/de/navbar.json";
+import sponsors from "public/locales/de/sponsors.json";
 
 // react-i18next versions higher than 11.11.0
 declare module "react-i18next" {
@@ -18,6 +19,7 @@ declare module "react-i18next" {
       footer: typeof footer;
       members: typeof members;
       navbar: typeof navbar;
+      sponsors: typeof sponsors;
     };
   }
 }

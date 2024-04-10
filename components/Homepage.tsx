@@ -10,6 +10,12 @@ import {
   Title,
 } from "@mantine/core";
 import React from "react";
+import { withTranslation, WithTranslation } from "next-i18next";
+import Meta from "../components/Meta";
+import Link from "next/link";
+import SponsorCard from "./SponsorCard";
+
+// member logos
 import farLogo from "/public/logos/FAR.jpg";
 import wueSpaceLogo from "/public/logos/wue_space.png";
 import seeSatLogo from "/public/logos/SeeSat.png";
@@ -21,9 +27,9 @@ import warrLogo from "/public/logos/WARR.svg";
 import staLogo from "/public/logos/STA.svg";
 import erigLogo from "/public/logos/ERIG.png";
 import bearsLogo from "/public/logos/BEARS.png";
-import { withTranslation, WithTranslation } from "next-i18next";
-import Meta from "../components/Meta";
-import Link from "next/link";
+
+// sponsor logos
+import ohbLogo from "/public/logos/OHB_RGB.jpg";
 
 const Homepage = ({ t }: WithTranslation) => {
   /*
@@ -270,9 +276,23 @@ const Homepage = ({ t }: WithTranslation) => {
             />
           </Grid.Col>
         </Grid>
+
+        <Title mt="xl" order={2}>
+          {t("title", { ns: "sponsors" })}
+        </Title>
+
+        <Grid gutter={"sm"}>
+          <Grid.Col span={{ base: 12, sm: 6, lg: 4 }}>
+            <SponsorCard
+              img={ohbLogo}
+              name={"OHB Systems AG"}
+              description={t("ohb", { ns: "sponsors" })}
+            />
+          </Grid.Col>
+        </Grid>
       </Container>
     </>
   );
 };
 
-export default withTranslation(["common", "members"])(Homepage);
+export default withTranslation(["common", "members", "sponsors"])(Homepage);
