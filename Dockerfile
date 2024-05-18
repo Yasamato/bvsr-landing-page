@@ -1,12 +1,12 @@
 # Install dependencies only when needed
-FROM oven/bun:1.0.36-alpine AS deps
+FROM oven/bun:1.1.8-alpine AS deps
 WORKDIR /app
 
 COPY package.json bun.lockb ./
 RUN bun install --production --frozen-lockfile
 
 # Rebuild the source code only when needed
-FROM node:21.7-alpine AS builder
+FROM node:22.2-alpine AS builder
 WORKDIR /app
 
 COPY --from=deps /app/node_modules ./node_modules
@@ -14,7 +14,7 @@ COPY . .
 RUN npm run build
 
 # Production image, copy all the files and run next
-FROM node:21.7-alpine AS runner
+FROM node:22.2-alpine AS runner
 WORKDIR /app
 
 # You only need to copy next.config.js if you are NOT using the default configuration
