@@ -10,7 +10,7 @@ const Footer = ({ t }: WithTranslation) => {
         <Grid.Col span={{ base: 12, sm: 5, md: 4 }}>
           <Text>
             <Trans t={t} i18nKey="contact_us" ns={"footer"}>
-              Contact us per <a href={"mailto:bvsr@lucas-krempel.de"}>mail</a>
+              Contact us per <a href={"mailto:vorstand@bvsr.space"}>mail</a>
             </Trans>
           </Text>
         </Grid.Col>

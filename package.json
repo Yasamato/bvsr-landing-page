@@ -10,26 +10,26 @@
   },
   "dependencies": {
     "3": "^2.1.0",
-    "@mantine/core": "^7.7.1",
-    "@mantine/hooks": "^7.7.1",
+    "@mantine/core": "^7.9.2",
+    "@mantine/hooks": "^7.9.2",
     "@million/lint": "latest",
-    "@tabler/icons-react": "^3.1.0",
-    "i18next": "^23.11.1",
-    "next": "^14.1.4",
-    "next-i18next": "^15.2.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-i18next": "^14.1.0",
-    "sharp": "^0.33.3"
+    "@tabler/icons-react": "^3.4.0",
+    "i18next": "^23.11.4",
+    "next": "^14.2.3",
+    "next-i18next": "^15.3.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-i18next": "^14.1.1",
+    "sharp": "^0.33.4"
   },
   "devDependencies": {
-    "@types/node": "^20.12.7",
-    "@types/react": "^18.2.75",
-    "@types/react-dom": "^18.2.24",
-    "@typescript-eslint/eslint-plugin": "^7.6.0",
-    "@typescript-eslint/parser": "^7.6.0",
-    "eslint": "^9.0.0",
-    "eslint-config-next": "^14.1.4",
+    "@types/node": "^20.12.12",
+    "@types/react": "^18.3.2",
+    "@types/react-dom": "^18.3.0",
+    "@typescript-eslint/eslint-plugin": "^7.9.0",
+    "@typescript-eslint/parser": "^7.9.0",
+    "eslint": "^9.3.0",
+    "eslint-config-next": "^14.2.3",
     "typescript": "^5.4.5"
   }
 }
