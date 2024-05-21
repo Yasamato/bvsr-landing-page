@@ -1,6 +1,6 @@
 {
   "name": "bvsr-landing-page",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -10,9 +10,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@mantine/core": "^7.9.2",
-    "@mantine/hooks": "^7.9.2",
-    "@tabler/icons-react": "^3.4.0",
     "accept-language": "^3.0.18",
     "flowbite-react": "^0.9.0",
     "i18next": "^23.11.5",
