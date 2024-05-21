@@ -5,16 +5,14 @@ const config = {
   content: [
     flowbite.content(),
     "./app/**/*.{ts,tsx,js}",
-    "./components/**/*.{ts,tsx,js}"
+    "./components/**/*.{ts,tsx,js}",
   ],
   theme: {
     extend: {
-      fontFamily: ["Maven Pro", "sans-serif"]
+      fontFamily: ["Maven Pro", "sans-serif"],
     },
   },
-  plugins: [
-    flowbite.plugin()
-  ],
-}
+  plugins: [flowbite.plugin()],
+};
 
-export default config
+export default config;
