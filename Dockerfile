@@ -3,7 +3,7 @@ FROM oven/bun:1.1.8-alpine AS deps
 WORKDIR /app
 
 COPY package.json bun.lockb ./
-RUN bun install --production --frozen-lockfile
+RUN bun install --frozen-lockfile
 
 # Rebuild the source code only when needed
 FROM node:22.2-alpine AS builder
