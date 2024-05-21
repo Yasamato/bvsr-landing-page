@@ -1,0 +1,62 @@
+{
+  "history": "Geschichte des BVSR",
+  "save_the_date": "Die nächste BVSR Konferenz ist am 16.-19. Mai 2024 in Friedrichshafen.",
+  "timeline": {
+    "first_talks": {
+      "title": "Erste Idee",
+      "text": "Erste Gespräche zwischen den Gruppen auf dem IAC Bremen"
+    },
+    "interested_groups": {
+      "title": "Initiale Gespräche",
+      "text": "Treffen in Darmstadt zwischen interessierten Gruppen"
+    },
+    "core_ideas": {
+      "title": "Ziele formulieren",
+      "text": "Treffen in Stuttgart, definieren der Kernideen und -Ziele"
+    },
+    "deepen_cooperation": {
+      "title": "Kooperation zwischen den Gruppen",
+      "text": "Treffen in Darmstadt zum Vertiefen der Kooperation zwischen den Gruppen"
+    },
+    "start_constitution": {
+      "title": "Mitgliedergewinnung",
+      "text": "Treffen in Dresden, Beginn der Arbeiten an der Verfassung"
+    },
+    "decision_founding": {
+      "title": "BVSR nimmt Gestalt an",
+      "text": "Entscheidung zur Gründung des BVSR in Dresden"
+    },
+    "founding": {
+      "title": "Mitgliedergewinnung",
+      "text": "BVSR wird in Darmstadt gegründet"
+    },
+    "1st_conference": {
+      "title": "1. BVSR Konferenz",
+      "text": "Über 80 registrierte Teilnehmer nahmen an der ersten BVSR Konferenz in München"
+    },
+    "join_erig_sta_bears": {
+      "title": "Beitritt ERIG e.V., STA e.V. & BEARS e.V.",
+      "text": "Die Vereine ExperimentalRaumfahrt-InteressenGemeinschaft e.V. & Space Team Aachen e.V. treten dem BVSR auf der Jahreshauptversammlung bei sowie Berlin Experimental Astronautics Research Student Team e.V. unter Vorbehalt"
+    },
+    "2nd_conference": {
+      "title": "2. BVSR Konferenz",
+      "text": "Über 140 registrierte Teilnehmer nahmen an der zweiten BVSR Konferenz in Stuttgart teil"
+    },
+    "3rd_conference": {
+      "title": "3. BVSR Konferenz",
+      "text": "Dritte BVSR Konferenz in Friedrichshafen"
+    },
+    "join_aux_moon": {
+      "title": "Beitritt Auxspace e.V. & Moon Space e.V.",
+      "text": "Die Vereine Auxspace e.V. & Moon Aixperts e.V. treten dem BVSR auf der Jahreshauptversammlung bei."
+    },
+    "4th_conference": {
+      "title": "4. BVSR Konferenz",
+      "text": "Vierte BVSR Konferenz in Aachen"
+    },
+    "5th_conference": {
+      "title": "5. BVSR Konferenz",
+      "text": "Fünfte BVSR Konferenz in Darmstadt"
+    }
+  }
+}

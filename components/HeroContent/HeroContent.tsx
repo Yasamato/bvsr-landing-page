@@ -1,65 +1,36 @@
-import React from "react";
-import { Overlay, Title, Text, Center } from "@mantine/core";
 import Image from "next/image";
 import backgroundImage from "./background.jpg";
-import { WithTranslation, withTranslation } from "next-i18next";
-import classes from "./HeroContent.module.css";
+import bvsrLogo from "../members/logos/BVSR.svg";
 
-function HeroContent({ t }: WithTranslation) {
+export default async function HeroContent({ lng }: { lng: string }) {
   return (
-    <div className={classes.hero}>
-      <div>
-        <Image
-          src={backgroundImage}
-          fill={true}
-          alt={"Background image with stars"}
-          placeholder={"blur"}
-          style={{
-            zIndex: 0,
-            objectFit: "cover",
-          }}
-        />
-        <Overlay
-          gradient="linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 40%)"
-          opacity={1}
-          zIndex={1}
-        />
-      </div>
-
-      <Center>
-        <Image
-          height={132}
-          width={240}
-          src={"/mini_color.svg"}
-          alt={"BVSR logo"}
-          priority={true}
-          style={{
-            zIndex: 1,
-            objectFit: "cover",
-          }}
-        />
-      </Center>
-      <Title
-        className={classes.title}
-        style={{ textAlign: "center", position: "relative", zIndex: 1 }}
-      >
+    <div
+      className={
+        "relative flex h-[700px] flex-col items-center px-32 py-16 text-white"
+      }
+      style={{
+        backgroundImage: `url(${backgroundImage.src})`,
+        backgroundSize: "cover",
+      }}
+    >
+      <Image
+        height={132}
+        width={240}
+        src={bvsrLogo}
+        alt={"BVSR Logo"}
+        priority={true}
+        className="object-cover"
+      />
+      <h1 className="text-center text-4xl">
         Bundesverband
         <br />
         studentischer Raumfahrt
-      </Title>
-
-      <Center>
-        <Text
-          className={classes.description}
-          size="xl"
-          mt="xl"
-          style={{ textAlign: "center", zIndex: 1 }}
-        >
-          {t("hero_label")}
-        </Text>
-      </Center>
+      </h1>
+      <span className={"mt-16 text-center text-2xl"}>
+        {lng == "de"
+          ? "Der Bundesverband studentischer Raumfahrt (BVSR) repräsentiert deutsche Studentengruppen involviert in Weltraumprojekten auf einem nationalen Level"
+          : "The Bundesverband studentischer Raumfahrt (BVSR) represents German student groups involved in space projects on a national level"}
+      </span>
     </div>
   );
 }
-
-export default withTranslation("common")(HeroContent);
