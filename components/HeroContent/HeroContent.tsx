@@ -6,13 +6,13 @@ export default async function HeroContent({ lng }: { lng: string }) {
   return (
     <div
       className={
-        "relative h-[700px] bg-cover bg-center bg-no-repeat text-white"
+        "relative flex min-h-[700px] w-full flex-col items-center bg-cover bg-center bg-no-repeat text-white"
       }
       style={{
         backgroundImage: `url(${backgroundImage.src})`,
       }}
     >
-      <div className="flex flex-col items-center px-32 py-16">
+      <div className="container flex flex-col items-center px-8 py-16">
         <Image
           height={132}
           width={240}
@@ -26,11 +26,11 @@ export default async function HeroContent({ lng }: { lng: string }) {
           <br />
           studentischer Raumfahrt
         </h1>
-        <span className={"mt-16 text-center text-2xl"}>
+        <div className={"mt-8 text-center text-2xl"}>
           {lng == "de"
             ? "Der Bundesverband studentischer Raumfahrt (BVSR) repräsentiert deutsche Studentengruppen involviert in Weltraumprojekten auf einem nationalen Level"
             : "The Bundesverband studentischer Raumfahrt (BVSR) represents German student groups involved in space projects on a national level"}
-        </span>
+        </div>
       </div>
     </div>
   );

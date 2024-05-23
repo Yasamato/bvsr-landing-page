@@ -30,7 +30,7 @@ export default async function Members({ lng }: { lng: string }) {
      */
 
   return (
-    <div className="container flex flex-col gap-2">
+    <div className="container flex flex-col gap-2 px-4">
       <h2 className="text-2xl">{t("members")}</h2>
 
       <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3">

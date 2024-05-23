@@ -13,7 +13,7 @@ export default async function BVSRTimeline({ lng }: { lng: string }) {
   const { t } = await useTranslation(lng, "history");
 
   return (
-    <div className="container flex flex-col gap-2">
+    <div className="container flex flex-col gap-2 px-4">
       <h2 className="text-2xl">{t("history")}</h2>
 
       <Timeline>

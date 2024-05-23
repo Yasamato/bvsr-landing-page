@@ -18,11 +18,11 @@ export default async function BVSRNavbar({ lng }: { lng: string }) {
 
   return (
     <Navbar fluid>
-      <div className="flex items-center gap-8">
+      <div className="flex flex-col items-center gap-8 md:flex-row">
         <NavbarBrand href="https://bvsr.space">
           <Image
             src={bvsrLogo}
-            className="mr-2 h-8 w-16 object-cover"
+            className="mr-2 h-10 w-20 object-cover"
             alt="BVSR Logo"
           />
           <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
@@ -30,7 +30,7 @@ export default async function BVSRNavbar({ lng }: { lng: string }) {
           </span>
         </NavbarBrand>
         <NavbarCollapse>
-          <div className="relative flex items-center gap-4">
+          <div className="relative flex flex-col items-center gap-4 md:flex-row">
             <Dropdown
               inline
               label={
@@ -65,7 +65,7 @@ export default async function BVSRNavbar({ lng }: { lng: string }) {
           </div>
         </NavbarCollapse>
       </div>
-      <div className="flex">
+      <div className="self-start md:self-center flex items-center gap-2">
         <Language lng={lng} />
         <NavbarToggle />
       </div>
