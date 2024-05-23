@@ -11,14 +11,15 @@ import {
   NavbarCollapse,
   NavbarLink,
   Navbar,
+  DarkThemeToggle,
 } from "flowbite-react";
 
 export default async function BVSRNavbar({ lng }: { lng: string }) {
   const { t } = await useTranslation(lng, "navbar");
 
   return (
-    <Navbar fluid>
-      <div className="flex flex-col md:items-center md:gap-8 md:flex-row">
+    <Navbar fluid className="sticky top-0 z-10">
+      <div className="flex flex-col md:flex-row md:items-center md:gap-8">
         <NavbarBrand href="https://bvsr.space">
           <Image
             src={bvsrLogo}
@@ -30,7 +31,7 @@ export default async function BVSRNavbar({ lng }: { lng: string }) {
           </span>
         </NavbarBrand>
         <NavbarCollapse>
-          <div className="relative flex flex-col md:items-center md:gap-4 md:flex-row">
+          <div className="relative flex flex-col md:flex-row md:items-center md:gap-4">
             <Dropdown
               inline
               label={
@@ -65,7 +66,8 @@ export default async function BVSRNavbar({ lng }: { lng: string }) {
           </div>
         </NavbarCollapse>
       </div>
-      <div className="self-start md:self-center flex items-center gap-2">
+      <div className="flex items-center gap-2 self-start md:self-center">
+        <DarkThemeToggle />
         <Language lng={lng} />
         <NavbarToggle />
       </div>

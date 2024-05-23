@@ -21,9 +21,13 @@ export default async function MemberCard({
   const { t } = await useTranslation(lng, "members");
 
   return (
-    <div className="space-between flex h-[440px] flex-col p-4 shadow">
-      <Link href={link} target={"_blank"}>
-        <div className="relative h-[160px] cursor-pointer">
+    <div className="space-between flex h-[440px] flex-col rounded-lg bg-[#eee] p-2 shadow dark:bg-gray-800">
+      <Link
+        href={link}
+        target={"_blank"}
+        className="cursor-pointer rounded-lg bg-white p-2"
+      >
+        <div className="relative h-[140px]">
           <Image src={img} fill={true} alt={name} className="object-contain" />
         </div>
       </Link>

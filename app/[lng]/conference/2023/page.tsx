@@ -274,7 +274,7 @@ export default function Conference2023({
   }
 
   return (
-    <article className="container py-8">
+    <article className="container flex flex-col gap-4 py-8">
       <h1 className="text-4xl">Ausblick Konferenz 2023</h1>
 
       <p>

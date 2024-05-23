@@ -12,9 +12,11 @@ export default function SponsorCard({
   description,
 }: SponsorCardProps) {
   return (
-    <div className="space-between flex h-[440px] flex-col p-4 shadow">
-      <div className="relative h-[160px]">
-        <Image src={img} fill={true} alt={name} className="object-contain" />
+    <div className="space-between flex h-[440px] flex-col rounded-lg bg-[#eee] p-2 shadow dark:bg-gray-800">
+      <div className="rounded-lg bg-white p-2">
+        <div className="relative h-[140px]">
+          <Image src={img} fill={true} alt={name} className="object-contain" />
+        </div>
       </div>
 
       <div className="my-4">{name}</div>

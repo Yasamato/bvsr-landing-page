@@ -11,7 +11,7 @@ export default async function BVSRFooter({ lng }: { lng: string }) {
   const { t } = await useTranslation(lng, "footer");
 
   return (
-    <Footer container>
+    <Footer container className="rounded-none">
       <FooterCopyright by="BVSR e. V." year={2024} />
       <FooterLinkGroup>
         <FooterLink as={Link} href={"/" + lng + "/privacy-policy"}>
