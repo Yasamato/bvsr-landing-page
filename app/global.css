@@ -9,5 +9,5 @@ body {
 
 @font-face {
   font-family: "Maven Pro";
-  src: url("/MavenPro-VariableFont_wght.woff2") format("woff");
+  src: url("/assets/MavenPro-VariableFont_wght.woff2") format("woff");
 }

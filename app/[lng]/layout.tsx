@@ -15,10 +15,10 @@ export default async function RootLayout({
 }) {
   return (
     <html lang={lng}>
-      <body className="flex flex-col">
+      <body className="flex flex-col bg-white">
         <BVSRNavbar lng={lng} />
 
-        <main className="flex grow flex-col items-center gap-16 bg-[#eee]">
+        <main className="flex grow flex-col items-center gap-16">
           {children}
         </main>
 
