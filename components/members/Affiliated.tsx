@@ -1,18 +1,27 @@
 import MemberCard, { type MemberInfo } from "./MemberCard";
 
 // member logos
-import ohbLogo from "./logos/OHB.jpg";
+import astgLogo from "./logos/ASTG.png";
+import twstLogo from "./logos/TU-Wien-Space-Team.svg";
 
 import { useTranslation } from "../../app/i18n/i18n";
 
-export default async function Sponsors({ lng }: { lng: string }) {
-  const { t } = await useTranslation(lng, "sponsors");
+export default async function Affiliated({ lng }: { lng: string }) {
+  const { t } = await useTranslation(lng, "affiliated");
 
   const members: MemberInfo[] = [
     {
-      img: ohbLogo,
-      name: "OHB Systems AG",
-      desc: "ohb_desc",
+      img: astgLogo,
+      name: "ASTG",
+      desc: "astg_desc",
+      link: "https://astg.at",
+    },
+    {
+      img: twstLogo,
+      bdDarkImg: true,
+      name: "TU Wien Space Team",
+      desc: "tu_wien_spaceteam_desc",
+      link: "https://spaceteam.at",
     },
   ];
 

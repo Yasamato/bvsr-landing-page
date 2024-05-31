@@ -48,8 +48,12 @@ export default async function BVSRTimeline({ lng }: { lng: string }) {
           <TimelinePoint />
           <TimelineContent>
             <TimelineTime>16. May 2024</TimelineTime>
-            <TimelineTitle>{t("timeline.join_aux_moon.title")}</TimelineTitle>
-            <TimelineBody>{t("timeline.join_aux_moon.text")}</TimelineBody>
+            <TimelineTitle>
+              {t("timeline.join_sporg_aux_moon_astg_twst.title")}
+            </TimelineTitle>
+            <TimelineBody>
+              {t("timeline.join_sporg_aux_moon_astg_twst.text")}
+            </TimelineBody>
           </TimelineContent>
         </TimelineItem>
 

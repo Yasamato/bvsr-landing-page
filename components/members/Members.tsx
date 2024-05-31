@@ -1,4 +1,4 @@
-import MemberCard from "./MemberCard";
+import MemberCard, { type MemberInfo } from "./MemberCard";
 
 // member logos
 import farLogo from "./logos/FAR.jpg";
@@ -14,119 +14,116 @@ import erigLogo from "./logos/ERIG.png";
 import bearsLogo from "./logos/BEARS.png";
 import auxLogo from "./logos/AUX.png";
 import moonLogo from "./logos/Moon.png";
+import sprogLogo from "./logos/SPROG.svg";
 
 import { useTranslation } from "../../app/i18n/i18n";
 
 export default async function Members({ lng }: { lng: string }) {
   const { t } = await useTranslation(lng, "members");
-  /*
-      <Container mb="xs">
-        <Alert title={"Save the date!"} color={"orange"}>
-          <Link href={"https://seesat.eu/bvsr_conference_2024/"}>
-            {t("save_the_date")}
-          </Link>
-        </Alert>
-      </Container>
-     */
+
+  const members: MemberInfo[] = [
+    {
+      img: warrLogo,
+      name: "WARR",
+      desc: "warr_desc",
+      link: "https://warr.de",
+    },
+    {
+      img: ksatLogo,
+      name: "KSat",
+      desc: "ksat_desc",
+      link: "https://www.ksat-stuttgart.de",
+    },
+    {
+      img: tudsatLogo,
+      name: "TUDSaT",
+      desc: "tudsat_desc",
+      link: "https://tudsat.space",
+    },
+    {
+      img: hyendLogo,
+      name: "HyEnD",
+      desc: "hyend_desc",
+      link: "https://hyend.de",
+    },
+    {
+      img: starLogo,
+      name: "STAR Dresden",
+      desc: "star_desc",
+      link: "https://star-dresden.de",
+    },
+    {
+      img: seeSatLogo,
+      name: "SeeSat",
+      desc: "seesat_desc",
+      link: "https://seesat.eu",
+    },
+    {
+      img: wueSpaceLogo,
+      name: "WüSpace",
+      desc: "wuespace_desc",
+      link: "https://www.wuespace.de",
+    },
+    {
+      img: farLogo,
+      name: "FAR",
+      desc: "far_desc",
+      link: "https://alternative-raumfahrt.de",
+    },
+    {
+      img: staLogo,
+      name: "STA",
+      desc: "sta_desc",
+      link: "https://www.spaceteamaachen.de",
+    },
+    {
+      img: erigLogo,
+      name: "ERIG",
+      desc: "erig_desc",
+      link: "https://er-ig.de",
+    },
+    {
+      img: bearsLogo,
+      name: "BEARS",
+      desc: "bears_desc",
+      link: "https://www.tu.berlin/raumfahrttechnik/studium-lehre/studentische-initiativen/bears",
+    },
+    {
+      img: sprogLogo,
+      name: "SPROG",
+      desc: "sprog_desc",
+      link: "https://spaceflight-rocketry-giessen.de",
+    },
+    {
+      img: auxLogo,
+      name: "Auxspace",
+      desc: "aux_desc",
+      link: "https://auxspace.de",
+    },
+    {
+      img: moonLogo,
+      name: "Moon Aixperts",
+      desc: "moon_desc",
+      link: "https://www.moonaixperts.de",
+    },
+  ];
 
   return (
     <div className="container flex flex-col gap-2 px-4">
-      <h2 className="text-2xl">{t("members")}</h2>
+      <h2 className="text-2xl">{t("title")}</h2>
 
       <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3">
-        <MemberCard
-          img={warrLogo}
-          name={"WARR"}
-          description={t("warr_desc")}
-          link={"https://warr.de"}
-          lng={lng}
-        />
-        <MemberCard
-          img={ksatLogo}
-          name={"KSat"}
-          description={t("ksat_desc")}
-          link={"https://www.ksat-stuttgart.de"}
-          lng={lng}
-        />
-        <MemberCard
-          img={tudsatLogo}
-          name={"TUDSaT"}
-          description={t("tudsat_desc")}
-          link={"https://tudsat.space"}
-          lng={lng}
-        />
-        <MemberCard
-          img={hyendLogo}
-          name={"HyEnD"}
-          description={t("hyend_desc")}
-          link={"https://hyend.de"}
-          lng={lng}
-        />
-        <MemberCard
-          img={starLogo}
-          name={"STAR Dresden"}
-          description={t("star_desc")}
-          link={"https://star-dresden.de"}
-          lng={lng}
-        />
-        <MemberCard
-          img={seeSatLogo}
-          name={"SeeSat"}
-          description={t("seesat_desc")}
-          link={"https://seesat.eu"}
-          lng={lng}
-        />
-        <MemberCard
-          img={wueSpaceLogo}
-          name={"WüSpace"}
-          description={t("wuespace_desc")}
-          link={"https://www.wuespace.de"}
-          lng={lng}
-        />
-        <MemberCard
-          img={farLogo}
-          name={"FAR"}
-          description={t("far_desc")}
-          link={"https://alternative-raumfahrt.de"}
-          lng={lng}
-        />
-        <MemberCard
-          img={staLogo}
-          name={"STA"}
-          description={t("sta_desc")}
-          link={"https://www.spaceteamaachen.de"}
-          lng={lng}
-        />
-        <MemberCard
-          img={erigLogo}
-          name={"ERIG"}
-          description={t("erig_desc", { ns: "members" })}
-          link={"https://er-ig.de/"}
-          lng={lng}
-        />
-        <MemberCard
-          img={bearsLogo}
-          name={"BEARS"}
-          description={t("bears_desc", { ns: "members" })}
-          link={
-            "https://www.tu.berlin/raumfahrttechnik/studium-lehre/studentische-initiativen/bears"
-          }
-          lng={lng}
-        />
-        <MemberCard
-          img={auxLogo}
-          name={"Auxspace"}
-          description={t("aux_desc", { ns: "members" })}
-          link={"https://auxspace.de"}
-          lng={lng}
-        />
-        <MemberCard
-          img={moonLogo}
-          name={"Moon Aixperts"}
-          description={t("moon_desc", { ns: "members" })}
-          link={"https://www.moonaixperts.de"}
-          lng={lng}
-        />
+        {members.map((member) => (
+          <MemberCard
+            key={member.name}
+            img={member.img}
+            bdDarkImg={member.bdDarkImg}
+            name={member.name}
+            desc={t(member.desc)}
+            link={member.link}
+            lng={lng}
+          />
+        ))}
       </div>
     </div>
   );

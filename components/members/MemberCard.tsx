@@ -3,48 +3,65 @@ import Link from "next/link";
 import { useTranslation } from "../../app/i18n/i18n";
 import { Button } from "flowbite-react";
 
-interface MemberCardProps {
-  lng: string;
+export interface MemberInfo {
   img: StaticImageData;
+  bdDarkImg?: boolean;
   name: string;
-  description: string;
-  link: string;
+  desc: string;
+  link?: string;
 }
 
 export default async function MemberCard({
   lng,
   img,
+  bdDarkImg = false,
   name,
-  description,
+  desc,
   link,
-}: MemberCardProps) {
+}: {
+  lng: string;
+} & MemberInfo) {
   const { t } = await useTranslation(lng, "members");
 
+  const image = (
+    <div
+      className={
+        "rounded-lg px-2 py-1 " + (bdDarkImg ? "bg-gray-800" : "bg-white")
+      }
+    >
+      <div className="relative h-[140px]">
+        <Image src={img} fill={true} alt={name} className="object-contain" />
+      </div>
+    </div>
+  );
+
   return (
-    <div className="space-between flex h-[440px] flex-col rounded-lg bg-[#eee] p-2 shadow dark:bg-gray-800">
-      <Link
-        href={link}
-        target={"_blank"}
-        className="cursor-pointer rounded-lg bg-white p-2"
-      >
-        <div className="relative h-[140px]">
-          <Image src={img} fill={true} alt={name} className="object-contain" />
-        </div>
-      </Link>
+    <div className="flex h-[410px] flex-col gap-2 rounded-lg bg-[#eee] p-2 shadow dark:bg-gray-800">
+      {link ? (
+        <Link href={link} target={"_blank"} className="cursor-pointer">
+          {image}
+        </Link>
+      ) : (
+        image
+      )}
 
-      <div className="my-4">{name}</div>
+      <div className="mt-2 grow">
+        <h3 className="text-2xl">{name}</h3>
 
-      <div className="line-clamp-[8] grow text-sm">{description}</div>
+        <div className="line-clamp-[6]">{desc}</div>
+      </div>
 
-      <Button
-        as={Link}
-        href={link}
-        target="_blank"
-        color="blue"
-        className="mt-8 w-full"
-      >
-        {t("visit")} {name}
-      </Button>
+      {link && (
+        <Button
+          as={Link}
+          href={link}
+          target="_blank"
+          color="blue"
+          className="w-full"
+        >
+          {t("visit")} {name}
+        </Button>
+      )}
     </div>
   );
 }

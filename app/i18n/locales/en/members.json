@@ -1,5 +1,5 @@
 {
-  "members": "Members",
+  "title": "Members",
   "visit": "Visit",
   "warr_desc": "WARR e.V. was founded during the space race in the 1960s and is Germany's largest student space group. It is located in Munich.",
   "ksat_desc": "KSat e.V. is a student space group at the University of Stuttgart, focusing on small Satellites and Experiments in Microgravity.",
@@ -12,6 +12,7 @@
   "sta_desc": "Space Team Aachen e. V. is the student initiative for all student space projects in Aachen. In addition to several rocket projects, the STA develops rovers, CubeSats, and space-related experiments.",
   "erig_desc": "ERIG e.V. is a student group associated with the TU Braunschweig that designs and builds sounding rockets, microgravity and high-altitude experiments, CubeSats and their payloads, and rovers.",
   "bears_desc": "BEARS e.V. is the first space students club in the capital. Working with the greatest passion in rocketry, robotics, science and more to come in Berlin!",
+  "sprog_desc": "Spaceflight Rocketry Gießen e.V. aka SPROG is a student association at the Justus-Liebig-university and university of applied sciences in Giessen, which develops and constructs experimental rockets.",
   "aux_desc": "Auxspace e.V.",
   "moon_desc": "Moon Aixperts e.V."
 }

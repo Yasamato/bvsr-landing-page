@@ -1,5 +1,5 @@
 # Install dependencies only when needed
-FROM oven/bun:1.1.8-alpine AS deps
+FROM oven/bun:1.1.10-alpine AS deps
 WORKDIR /app
 
 COPY package.json bun.lockb ./
