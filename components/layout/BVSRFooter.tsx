@@ -14,12 +14,15 @@ export default async function BVSRFooter({ lng }: { lng: string }) {
     <Footer container className="rounded-none">
       <FooterCopyright by="BVSR e. V." year={2024} />
       <FooterLinkGroup>
-        <FooterLink as={Link} href={"/" + lng + "/privacy-policy"}>
+        <FooterLink as={Link} href={"https://tudsat.space/privacy-policy"}>
+          {t("privacy_policy")}
+        </FooterLink>
+        {/*<FooterLink as={Link} href={"/" + lng + "/privacy-policy"}>
           {t("privacy_policy")}
         </FooterLink>
         <FooterLink as={Link} href={"/" + lng + "/terms-of-use"}>
           {t("legal_notice")}
-        </FooterLink>
+        </FooterLink>*/}
         <FooterLink as={Link} href="mailto:vorstand@bvsr.space">
           {t("contact")}
         </FooterLink>

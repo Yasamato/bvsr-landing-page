@@ -1,12 +1,12 @@
 # Install dependencies only when needed
-FROM oven/bun:1.1.10-alpine AS deps
+FROM oven/bun:1.1.17-alpine AS deps
 WORKDIR /app
 
 COPY package.json bun.lockb ./
 RUN bun install --frozen-lockfile
 
 # Rebuild the source code only when needed
-FROM node:22.2-alpine AS builder
+FROM node:22.3-alpine AS builder
 WORKDIR /app
 
 COPY --from=deps /app/node_modules ./node_modules
